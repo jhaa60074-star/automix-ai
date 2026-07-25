@@ -1,0 +1,62 @@
+export const servicesData = [
+  {
+    id: 'ai-assistant',
+    slug: 'ai-assistant',
+    title: 'AI Assistant',
+    icon: '💬',
+    shortDescription: 'Advanced conversational AI for problem-solving and task management.',
+    fullDescription: 'Experience a ChatGPT-style conversational interface powered by advanced LLMs, specialized in understanding your business context and tasks.',
+    whoItsFor: 'Professionals, business owners, and teams looking for an intelligent co-pilot.',
+    useCases: ['Drafting emails and documents', 'Brainstorming ideas', 'Answering complex questions', 'Summarizing text'],
+    howItWorks: 'Simply type your question or command into the chat interface. The AI Assistant processes the request and responds instantly. It maintains context across the conversation.',
+    ctaText: 'Start Chatting Now',
+    ctaLink: '/signup',
+    helpLink: '/help/ai-assistant',
+    faqLink: '/faq#ai-assistant'
+  },
+  {
+    id: 'research-analysis',
+    slug: 'research-analysis',
+    title: 'Research & Analysis',
+    icon: '🔍',
+    shortDescription: 'Extract insights from vast amounts of data across multiple connected sources.',
+    fullDescription: 'Our Research & Analysis engine allows you to cross-reference data from multiple uploads and integrations to find deep insights quickly.',
+    whoItsFor: 'Analysts, researchers, marketers, and decision-makers.',
+    useCases: ['Market research', 'Competitor analysis', 'Data extraction from large datasets', 'Trend identification'],
+    howItWorks: 'Upload your datasets or connect your web sources. Ask the AI to find specific trends, summarize findings, or generate comprehensive research reports.',
+    ctaText: 'Start Researching',
+    ctaLink: '/signup',
+    helpLink: '/help/research',
+    faqLink: '/faq#research'
+  },
+  {
+    id: 'file-analysis',
+    slug: 'file-analysis',
+    title: 'File Analysis',
+    icon: '📄',
+    shortDescription: 'Instantly analyze PDFs, Excel sheets, CSVs, and documents.',
+    fullDescription: 'Upload complex files and instantly query them. The AI extracts text, understands tables, and synthesizes information across multiple documents.',
+    whoItsFor: 'Financial analysts, legal professionals, HR teams, and administrators.',
+    useCases: ['Financial report summarization', 'Contract review', 'Extracting rows from CSVs', 'Image text extraction'],
+    howItWorks: 'Drag and drop your PDF, Excel, CSV, DOCX, or Image file. The AI processes it securely. You can then ask questions specifically about the contents of the file.',
+    ctaText: 'Try File Analysis',
+    ctaLink: '/signup',
+    helpLink: '/help/file-uploads',
+    faqLink: '/faq#file-analysis'
+  },
+  {
+    id: 'website-connection',
+    slug: 'website-connection',
+    title: 'Website Connection',
+    icon: '🌐',
+    shortDescription: 'Securely connect your website to train the AI on your live data.',
+    fullDescription: 'A future integration that will allow you to securely connect your website or knowledge base. The AI will learn from your live data, allowing it to perform accurate customer support and internal actions.',
+    whoItsFor: 'E-commerce owners, SaaS founders, and customer support teams.',
+    useCases: ['Automated customer support', 'Knowledge base querying', 'Dynamic product recommendations'],
+    howItWorks: 'This feature is currently in development. Once available, you will authenticate your website via a secure token, and Automik will sync and vector-index your content.',
+    ctaText: 'Join the Waitlist',
+    ctaLink: '/signup',
+    helpLink: '/help/website-connection',
+    faqLink: '/faq#website-connection'
+  }
+];

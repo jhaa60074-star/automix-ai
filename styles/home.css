@@ -1,0 +1,178 @@
+/* Hero Section */
+.hero-section {
+  padding: 6rem 0 4rem;
+  text-align: center;
+  background: var(--gradient-subtle);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Sections */
+.section {
+  padding: 5rem 0;
+}
+
+.section-bg-alt {
+  background: var(--background-secondary);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Grids */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .grid-2 { grid-template-columns: 1fr 1fr; }
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Cards */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.card-desc {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.card-link {
+  color: var(--primary-color);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+}
+.card-link:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* Feature Layout */
+.feature-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .feature-layout {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .feature-layout.reverse {
+    flex-direction: row-reverse;
+  }
+  .feature-content, .feature-visual {
+    flex: 1;
+  }
+}
+
+.feature-visual {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  width: 100%;
+}
+
+/* Trust Section */
+.trust-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.metric {
+  text-align: center;
+}
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+.metric-label {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -1,0 +1,55 @@
+:root {
+  /* Light Theme (Default) - White & Royal Blue/Indigo */
+  --primary-color: #2563eb; /* Royal Blue */
+  --primary-hover: #1d4ed8;
+  --secondary-color: #4f46e5; /* Indigo */
+  
+  --background-color: #ffffff;
+  --background-secondary: #f8fafc;
+  --background-tertiary: #f1f5f9;
+  
+  --text-color: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  
+  --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  --gradient-subtle: linear-gradient(to right, #f8fafc, #ffffff);
+
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-full: 9999px;
+}
+
+[data-theme='dark'] {
+  /* Dark Theme */
+  --primary-color: #3b82f6;
+  --primary-hover: #60a5fa;
+  --secondary-color: #6366f1;
+  
+  --background-color: #0b0f19; /* Deep blue/black */
+  --background-secondary: #111827;
+  --background-tertiary: #1f2937;
+  
+  --text-color: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  
+  --border-color: #334155;
+  --card-bg: #1e293b;
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+
+  --gradient-subtle: linear-gradient(to right, #0f172a, #0b0f19);
+}
