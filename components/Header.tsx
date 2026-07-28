@@ -1,14 +1,43 @@
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
 import Button from './Button';
+import { createClient } from '../utils/supabase/client';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [user, setUser] = useState<any>(null);
+  const router = useRouter();
+  const supabase = createClient();
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      setUser(session?.user || null);
+    };
+
+    fetchUser();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (_event, session) => {
+        setUser(session?.user || null);
+      }
+    );
+
+    return () => subscription.unsubscribe();
+  }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    setUser(null);
+    router.push('/login');
+    router.refresh();
   };
 
   return (
@@ -32,7 +61,6 @@ export default function Header() {
               <Link href="/faq" className="dropdown-item">FAQ</Link>
               <Link href="/contact" className="dropdown-item">Contact Support</Link>
               <Link href="/security" className="dropdown-item">Security</Link>
-              <Link href="#" className="dropdown-item">Documentation (Soon)</Link>
             </div>
           </div>
           <Link href="/about" className="nav-link">About</Link>
@@ -40,8 +68,18 @@ export default function Header() {
 
         <div className="header-actions nav-desktop">
           <ThemeToggle />
-          <Link href="/login" className="nav-link" style={{ marginLeft: '1rem' }}>Login</Link>
-          <Button href="/signup" variant="primary">Start Now</Button>
+          
+          {user ? (
+            <>
+              <Link href="/dashboard" className="nav-link" style={{ marginLeft: '1rem' }}>Dashboard</Link>
+              <button onClick={handleLogout} className="btn btn-secondary" style={{ padding: '0.5rem 1rem' }}>Log Out</button>
+            </>
+          ) : (
+            <>
+              <Link href="/login" className="nav-link" style={{ marginLeft: '1rem' }}>Login</Link>
+              <Button href="/signup" variant="primary">Start Now</Button>
+            </>
+          )}
         </div>
 
         {/* Mobile Menu Button */}
@@ -60,10 +98,20 @@ export default function Header() {
           <Link href="/faq" className="nav-mobile-link" onClick={toggleMobileMenu}>FAQ</Link>
           <Link href="/contact" className="nav-mobile-link" onClick={toggleMobileMenu}>Contact</Link>
           <Link href="/about" className="nav-mobile-link" onClick={toggleMobileMenu}>About</Link>
-          <Link href="/login" className="nav-mobile-link" onClick={toggleMobileMenu}>Login</Link>
+          
           <div className="nav-mobile-actions">
             <ThemeToggle />
-            <Button href="/signup" variant="primary" style={{ width: '100%', marginTop: '1rem' }}>Start Now</Button>
+            {user ? (
+              <>
+                <Link href="/dashboard" className="nav-mobile-link" onClick={toggleMobileMenu} style={{ marginTop: '1rem' }}>Dashboard</Link>
+                <button onClick={() => { handleLogout(); toggleMobileMenu(); }} className="btn btn-secondary" style={{ width: '100%', marginTop: '0.5rem' }}>Log Out</button>
+              </>
+            ) : (
+              <>
+                <Link href="/login" className="nav-mobile-link" onClick={toggleMobileMenu} style={{ marginTop: '1rem' }}>Login</Link>
+                <Button href="/signup" variant="primary" style={{ width: '100%', marginTop: '0.5rem' }}>Start Now</Button>
+              </>
+            )}
           </div>
         </div>
       )}
