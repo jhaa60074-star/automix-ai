@@ -1,9 +1,5 @@
-import ComingSoon from '../../components/ComingSoon';
-
-export const metadata = {
-  title: 'Refund Policy | AutrixGPT',
-};
+import { redirect } from 'next/navigation';
 
 export default function RefundPage() {
-  return <ComingSoon title="Refund Policy" description="Our Refund Policy details will be available here shortly." />;
+  redirect('/refund-policy');
 }
