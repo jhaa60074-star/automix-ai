@@ -191,18 +191,28 @@
 }
 
 .footer-col h4 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
   margin-bottom: 1.25rem;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .footer-col a {
   display: block;
-  color: var(--text-muted);
+  color: #000000;
   margin-bottom: 0.75rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 600;
   transition: color 0.2s;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.footer-col a::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
 }
 
 .footer-col a:hover {

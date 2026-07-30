@@ -1,6 +1,8 @@
 @import '../styles/theme.css';
 @import '../styles/components.css';
 @import '../styles/home.css';
+@import '../styles/chat.css';
+@import '../styles/floating-chat.css';
 
 * {
   box-sizing: border-box;

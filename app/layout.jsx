@@ -1,10 +1,12 @@
 import './globals.css';
 
+import React, { Suspense } from 'react';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import FooterWrapper from '../components/FooterWrapper';
+import FloatingChat from '../components/FloatingChat';
 
 export const metadata = {
-  title: 'Automik - AI SaaS Platform',
+  title: 'AutrixGPT - AI SaaS Platform',
   description: 'AI assistance, research, file analysis, and business automation platform.',
 };
 
@@ -36,7 +38,10 @@ export default function RootLayout({ children }) {
         <main style={{ minHeight: 'calc(100vh - 4rem - 300px)' }}>
           {children}
         </main>
-        <Footer />
+        <FooterWrapper />
+        <React.Suspense fallback={null}>
+          <FloatingChat />
+        </React.Suspense>
       </body>
     </html>
   );

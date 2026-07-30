@@ -12,16 +12,16 @@ export const legalData = {
     title: 'Terms of Service',
     lastUpdated: 'July 24, 2026',
     sections: [
-      { heading: '1. Acceptance of Terms', content: 'By using Automik, you agree to these terms.' },
+      { heading: '1. Acceptance of Terms', content: 'By using AutrixGPT, you agree to these terms.' },
       { heading: '2. User Responsibilities', content: 'You are responsible for the files you upload and the actions performed by your automations.' },
-      { heading: '3. Limitation of Liability', content: 'Automik is provided "as is" without warranty.' }
+      { heading: '3. Limitation of Liability', content: 'AutrixGPT is provided "as is" without warranty.' }
     ]
   },
   'refund-policy': {
     title: 'Refund Policy',
     lastUpdated: 'July 24, 2026',
     sections: [
-      { heading: '1. Subscription Billing', content: 'Automik is billed on a recurring basis.' },
+      { heading: '1. Subscription Billing', content: 'AutrixGPT is billed on a recurring basis.' },
       { heading: '2. Refund Eligibility', content: 'Refunds are handled on a case-by-case basis as per our placeholder policy.' }
     ]
   },
@@ -73,7 +73,7 @@ export const legalData = {
     title: 'Legal Notices',
     lastUpdated: 'July 24, 2026',
     sections: [
-      { heading: '1. Trademarks', content: 'Automik is a trademark of Automik Inc.' }
+      { heading: '1. Trademarks', content: 'AutrixGPT is a trademark of AutrixGPT Inc.' }
     ]
   }
 };

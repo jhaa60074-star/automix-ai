@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import { helpData } from '../../data/help';
 import Button from '../../components/Button';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Help Center | Automik',
-  description: 'Find answers, guides, and tutorials for Automik.',
+export const metadata: Metadata = {
+  title: 'Help Center | AutrixGPT',
+  description: 'Find answers, guides, and tutorials for AutrixGPT.',
 };
 
 export default function HelpCenterPage() {

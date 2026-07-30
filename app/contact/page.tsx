@@ -3,9 +3,9 @@ import { useState } from 'react';
 import Button from '../../components/Button';
 
 export default function ContactPage() {
-  const [formStatus, setFormStatus] = useState('idle'); // idle, loading, success, error
+  const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setFormStatus('loading');
     
@@ -78,7 +78,7 @@ export default function ContactPage() {
               <label htmlFor="message" style={{ fontWeight: '500' }}>Message</label>
               <textarea 
                 id="message" 
-                rows="5" 
+                rows={5}
                 required
                 style={{ padding: '0.75rem', borderRadius: 'var(--border-radius-sm)', border: '1px solid var(--border-color)', background: 'var(--background-color)', color: 'var(--text-color)', resize: 'vertical' }}
               ></textarea>

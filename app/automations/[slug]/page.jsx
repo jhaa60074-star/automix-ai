@@ -14,7 +14,7 @@ export function generateMetadata({ params }) {
   if (!automation) return { title: 'Automation Not Found' };
   
   return {
-    title: `${automation.title} | Automik Automations`,
+    title: `${automation.title} | AutrixGPT Automations`,
     description: automation.shortDescription,
   };
 }

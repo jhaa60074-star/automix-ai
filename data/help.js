@@ -2,10 +2,10 @@ export const helpData = [
   {
     id: 'getting-started',
     title: 'Getting Started',
-    description: 'Learn the basics of Automik and set up your account.',
+    description: 'Learn the basics of AutrixGPT and set up your account.',
     icon: '🚀',
     articles: [
-      { title: 'Welcome to Automik', content: 'Automik is your command center for business automation.' },
+      { title: 'Welcome to AutrixGPT', content: 'AutrixGPT is your command center for business automation.' },
       { title: 'Creating your first automation', content: 'Go to the Automations tab, select an app, and follow the setup wizard.' }
     ]
   },

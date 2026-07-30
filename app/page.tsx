@@ -32,7 +32,7 @@ export default function Home() {
                   <strong>User:</strong> Can you analyze the Q3 sales report and send a summary to my Slack?
                 </div>
                 <div style={{ background: 'var(--primary-color)', color: 'white', padding: '1rem', borderRadius: '8px', maxWidth: '80%', marginLeft: 'auto' }}>
-                  <strong>Automik AI:</strong> I've analyzed the report. Sales are up 14%. I have prepared the summary. Shall I send it to the #executive channel?
+                  <strong>AutrixGPT AI:</strong> I've analyzed the report. Sales are up 14%. I have prepared the summary. Shall I send it to the #executive channel?
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function Home() {
           <div className="section-header">
             <h2 className="section-title">Everything you need to automate</h2>
             <p className="section-subtitle">
-              From deep research and file analysis to cross-platform business automations, Automik connects the dots.
+              From deep research and file analysis to cross-platform business automations, AutrixGPT connects the dots.
             </p>
           </div>
           
@@ -55,28 +55,40 @@ export default function Home() {
               <div className="card-icon">💬</div>
               <h3 className="card-title">AI Assistant</h3>
               <p className="card-desc">Advanced conversational AI for problem-solving and task management.</p>
-              <Link href="/services/ai-assistant" className="card-link">Learn More →</Link>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                <Link href="/?openChat=true" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
+                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+              </div>
             </div>
             
             <div className="card">
               <div className="card-icon">🔍</div>
               <h3 className="card-title">Research & Analysis</h3>
               <p className="card-desc">Extract insights from vast amounts of data across multiple connected sources.</p>
-              <Link href="/services/research-analysis" className="card-link">Learn More →</Link>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                <Link href="/?openChat=true" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
+                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+              </div>
             </div>
             
             <div className="card">
               <div className="card-icon">📄</div>
               <h3 className="card-title">File Analysis</h3>
               <p className="card-desc">Instantly analyze PDFs, Excel sheets, CSVs, and documents.</p>
-              <Link href="/services/file-analysis" className="card-link">Learn More →</Link>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                <Link href="/?openChat=true" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
+                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+              </div>
             </div>
             
             <div className="card">
               <div className="card-icon">⚡</div>
               <h3 className="card-title">Business Automations</h3>
               <p className="card-desc">Connect and automate Instagram, WhatsApp, Gmail, Shopify, and more.</p>
-              <Link href="/automations" className="card-link">Learn More →</Link>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                <Link href="/automations" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
+                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+              </div>
             </div>
           </div>
         </div>
@@ -89,14 +101,14 @@ export default function Home() {
             <div className="feature-content">
               <h2 className="section-title">Your Conversational Co-pilot</h2>
               <p className="section-subtitle" style={{ margin: '0 0 2rem 0' }}>
-                Chat naturally with your data. The Automik AI Assistant supports PDF, Excel, CSV, DOCX, and Image uploads. Ask questions, analyze complex data, perform deep research, and generate reports.
+                Chat naturally with your data. The AutrixGPT AI Assistant supports PDF, Excel, CSV, DOCX, and Image uploads. Ask questions, analyze complex data, perform deep research, and generate reports.
               </p>
               <ul style={{ listStyleType: 'none', marginBottom: '2rem' }}>
                 <li style={{ marginBottom: '0.5rem', display: 'flex', gap: '0.5rem' }}><span>✓</span> PDF & Excel Export</li>
                 <li style={{ marginBottom: '0.5rem', display: 'flex', gap: '0.5rem' }}><span>✓</span> Direct Google Sheets integration</li>
                 <li style={{ marginBottom: '0.5rem', display: 'flex', gap: '0.5rem' }}><span>✓</span> Intelligent data extraction</li>
               </ul>
-              <Button href="/services/ai-assistant">Explore AI Assistant</Button>
+              <Button href="/?openChat=true">Explore AI Assistant</Button>
             </div>
             <div className="feature-visual" style={{ textAlign: 'center', padding: '4rem 2rem' }}>
               <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🤖</div>
@@ -114,7 +126,7 @@ export default function Home() {
             <div className="feature-content">
               <h2 className="section-title">Turn raw files into actionable insights</h2>
               <p className="section-subtitle" style={{ margin: '0 0 2rem 0' }}>
-                Upload your files and let Automik read, analyze, and interpret them. You just ask the questions, and the AI generates the results.
+                Upload your files and let AutrixGPT read, analyze, and interpret them. You just ask the questions, and the AI generates the results.
               </p>
               <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem' }}>
                 <span style={{ padding: '0.5rem 1rem', background: 'var(--background-secondary)', borderRadius: '4px' }}>PDF</span>
@@ -123,16 +135,16 @@ export default function Home() {
                 <span style={{ padding: '0.5rem 1rem', background: 'var(--background-secondary)', borderRadius: '4px' }}>DOCX</span>
               </div>
               <div style={{ display: 'flex', gap: '1rem' }}>
-                <Button href="/services/research-analysis">Explore Research</Button>
-                <Button href="/services/file-analysis" variant="secondary">Learn About File Analysis</Button>
+                <Button href="/?openChat=true">Explore Research</Button>
+                <Button href="/?openChat=true" variant="secondary">Learn About File Analysis</Button>
               </div>
             </div>
             <div className="feature-visual" style={{ textAlign: 'center', padding: '3rem 2rem' }}>
               <h4>The Workflow</h4>
               <div style={{ margin: '2rem 0', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <div style={{ padding: '1rem', background: 'var(--background-secondary)', borderRadius: '8px' }}>1. Upload / Connect</div>
-                <div style={{ padding: '1rem', background: 'var(--primary-color)', color: 'white', borderRadius: '8px' }}>2. AI Analyzes & Researches</div>
-                <div style={{ padding: '1rem', background: 'var(--background-secondary)', borderRadius: '8px' }}>3. Generate & Export Results</div>
+                <Link href="/?openChat=true" style={{ padding: '1rem', background: 'var(--background-secondary)', borderRadius: '8px', textDecoration: 'none', color: 'inherit', display: 'block', transition: 'background-color 0.2s', cursor: 'pointer' }}>1. Upload / Connect</Link>
+                <Link href="/?openChat=true" style={{ padding: '1rem', background: 'var(--primary-color)', color: 'white', borderRadius: '8px', textDecoration: 'none', display: 'block', transition: 'opacity 0.2s', cursor: 'pointer' }}>2. AI Analyzes & Researches</Link>
+                <Link href="/?openChat=true" style={{ padding: '1rem', background: 'var(--background-secondary)', borderRadius: '8px', textDecoration: 'none', color: 'inherit', display: 'block', transition: 'background-color 0.2s', cursor: 'pointer' }}>3. Generate & Export Results</Link>
               </div>
             </div>
           </div>
@@ -145,7 +157,7 @@ export default function Home() {
           <span style={{ display: 'inline-block', padding: '0.25rem 0.75rem', background: 'rgba(37, 99, 235, 0.1)', color: 'var(--primary-color)', borderRadius: '9999px', fontSize: '0.875rem', fontWeight: '600', marginBottom: '1rem' }}>Coming Soon</span>
           <h2 className="section-title">Connect your Website directly</h2>
           <p className="section-subtitle" style={{ marginBottom: '2rem' }}>
-            Soon you will be able to securely connect your website's data source directly to Automik. The AI will understand your live data and execute automated actions instantly.
+            Soon you will be able to securely connect your website's data source directly to AutrixGPT. The AI will understand your live data and execute automated actions instantly.
           </p>
           <Button href="/services/website-connection" variant="secondary">Learn About Website Connection</Button>
         </div>
@@ -157,7 +169,7 @@ export default function Home() {
           <div className="section-header">
             <h2 className="section-title">Powerful Automations</h2>
             <p className="section-subtitle">
-              Connect your favorite platforms and let Automik handle the repetitive tasks.
+              Connect your favorite platforms and let AutrixGPT handle the repetitive tasks.
             </p>
           </div>
 
@@ -166,31 +178,46 @@ export default function Home() {
               <div className="card-icon">📸</div>
               <h3 className="card-title">Instagram</h3>
               <p className="card-desc">Auto DM replies, Comment-to-DM, keyword triggers, and custom message workflows.</p>
-              <Link href="/automations/instagram" className="card-link">Learn More →</Link>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                <Link href="/automations/instagram" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
+                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+              </div>
             </div>
             <div className="card">
               <div className="card-icon">💬</div>
               <h3 className="card-title">WhatsApp</h3>
               <p className="card-desc">AI customer support replies, product inquiries, and seamless business workflows.</p>
-              <Link href="/automations/whatsapp" className="card-link">Learn More →</Link>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                <Link href="/automations/whatsapp" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
+                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+              </div>
             </div>
             <div className="card">
               <div className="card-icon">📧</div>
               <h3 className="card-title">Gmail</h3>
               <p className="card-desc">AI-assisted email replies, categorization, smart summaries, and notifications.</p>
-              <Link href="/automations/gmail" className="card-link">Learn More →</Link>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                <Link href="/automations/gmail" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
+                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+              </div>
             </div>
             <div className="card">
               <div className="card-icon">✈️</div>
               <h3 className="card-title">Telegram</h3>
               <p className="card-desc">Advanced bot automation, smart AI replies, and custom channel workflows.</p>
-              <Link href="/automations/telegram" className="card-link">Learn More →</Link>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                <Link href="/automations/telegram" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
+                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+              </div>
             </div>
             <div className="card">
               <div className="card-icon">🛍️</div>
               <h3 className="card-title">Shopify</h3>
               <p className="card-desc">Automate order updates, product workflows, and personalized customer interactions.</p>
-              <Link href="/automations/shopify" className="card-link">Learn More →</Link>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                <Link href="/automations/shopify" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
+                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+              </div>
             </div>
             <div className="card">
               <div className="card-icon">📊</div>

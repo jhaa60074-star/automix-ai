@@ -3,12 +3,12 @@ export const faqData = [
     category: 'General',
     items: [
       {
-        question: 'What is Automik?',
-        answer: 'Automik is a premium AI SaaS platform that allows you to chat with an AI assistant, analyze complex files, research data, and deploy automated workflows across various platforms like Instagram, WhatsApp, and Gmail.'
+        question: 'What is AutrixGPT?',
+        answer: 'AutrixGPT is a premium AI SaaS platform that allows you to chat with an AI assistant, analyze complex files, research data, and deploy automated workflows across various platforms like Instagram, WhatsApp, and Gmail.'
       },
       {
-        question: 'Do I need coding skills to use Automik?',
-        answer: 'No! Automik is built for non-technical users. Our intuitive visual interface and conversational AI make setting up automations and researching data simple.'
+        question: 'Do I need coding skills to use AutrixGPT?',
+        answer: 'No! AutrixGPT is built for non-technical users. Our intuitive visual interface and conversational AI make setting up automations and researching data simple.'
       }
     ]
   },

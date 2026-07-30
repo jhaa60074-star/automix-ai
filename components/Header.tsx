@@ -45,7 +45,7 @@ export default function Header() {
       <div className="container header-container">
         <div className="logo">
           <Link href="/">
-            <span className="text-gradient" style={{ fontWeight: '700', fontSize: '1.5rem' }}>AUTOMIK</span>
+            <span className="text-gradient" style={{ fontWeight: '700', fontSize: '1.5rem' }}>AUTRIXGPT</span>
           </Link>
         </div>
 

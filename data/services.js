@@ -53,7 +53,7 @@ export const servicesData = [
     fullDescription: 'A future integration that will allow you to securely connect your website or knowledge base. The AI will learn from your live data, allowing it to perform accurate customer support and internal actions.',
     whoItsFor: 'E-commerce owners, SaaS founders, and customer support teams.',
     useCases: ['Automated customer support', 'Knowledge base querying', 'Dynamic product recommendations'],
-    howItWorks: 'This feature is currently in development. Once available, you will authenticate your website via a secure token, and Automik will sync and vector-index your content.',
+    howItWorks: 'This feature is currently in development. Once available, you will authenticate your website via a secure token, and AutrixGPT will sync and vector-index your content.',
     ctaText: 'Join the Waitlist',
     ctaLink: '/signup',
     helpLink: '/help/website-connection',

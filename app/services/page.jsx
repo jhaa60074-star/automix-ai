@@ -3,7 +3,7 @@ import { servicesData } from '../../data/services';
 import Button from '../../components/Button';
 
 export const metadata = {
-  title: 'Services | Automik',
+  title: 'Services | AutrixGPT',
   description: 'Explore our AI Assistant, Research & Analysis, File Analysis, and Automation services.',
 };
 
@@ -13,7 +13,7 @@ export default function ServicesPage() {
       <div className="section-header">
         <h1 className="section-title">Our Services</h1>
         <p className="section-subtitle">
-          Discover how Automik can transform your workflows with AI-powered tools and deep integrations.
+          Discover how AutrixGPT can transform your workflows with AI-powered tools and deep integrations.
         </p>
       </div>
 
@@ -24,7 +24,7 @@ export default function ServicesPage() {
             <h2 className="card-title" style={{ fontSize: '1.5rem' }}>{service.title}</h2>
             <p className="card-desc" style={{ flexGrow: 1 }}>{service.shortDescription}</p>
             <div style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem', alignItems: 'center' }}>
-              <Button href={`/services/${service.slug}`}>Learn More</Button>
+              <Button href={`/services/${service.slug}`}>Start Now</Button>
               <Link href={service.helpLink} className="card-link" style={{ fontSize: '0.875rem' }}>Help / FAQ</Link>
             </div>
           </div>

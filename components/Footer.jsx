@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container footer-container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <span className="text-gradient" style={{ fontWeight: '700', fontSize: '1.5rem', display: 'block', marginBottom: '1rem' }}>AUTOMIK</span>
+            <span className="text-gradient" style={{ fontWeight: '700', fontSize: '1.5rem', display: 'block', marginBottom: '1rem' }}>AUTRIXGPT</span>
             <p style={{ color: 'var(--text-muted)' }}>The complete premium AI SaaS platform for business automation and research.</p>
           </div>
           
@@ -32,7 +32,7 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>Resources</h4>
-            <Link href="/help">Help Center</Link>
+            <Link href="/chat">Help Center</Link>
             <Link href="/faq">FAQ</Link>
             <Link href="/contact">Contact Support</Link>
             <Link href="/about">About</Link>
@@ -41,18 +41,13 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>Legal</h4>
-            <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/terms-of-service">Terms of Service</Link>
-            <Link href="/refund-policy">Refund Policy</Link>
-            <Link href="/cookie-policy">Cookie Policy</Link>
-            <Link href="/data-privacy">Data Privacy</Link>
-            <Link href="/acceptable-use">Acceptable Use</Link>
-            <Link href="/subprocessors">Subprocessors</Link>
-            <Link href="/legal-notices">Legal Notices</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Service</Link>
+            <Link href="/refund">Refund Policy</Link>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Automik. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} AutrixGPT. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -3,7 +3,7 @@ import { pricingPlans } from '../../data/pricing';
 import Button from '../../components/Button';
 
 export const metadata = {
-  title: 'Pricing | Automik',
+  title: 'Pricing | AutrixGPT',
   description: 'Choose the right plan for your business automation needs.',
 };
 

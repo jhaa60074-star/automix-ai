@@ -4,7 +4,7 @@ import { faqData } from '../../data/faq';
 import Button from '../../components/Button';
 
 export default function FAQPage() {
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState<string>('All');
 
   const categories = ['All', ...faqData.map(group => group.category)];
   
@@ -17,7 +17,7 @@ export default function FAQPage() {
       <div className="section-header">
         <h1 className="section-title">Frequently Asked Questions</h1>
         <p className="section-subtitle">
-          Find answers to common questions about Automik, billing, and automations.
+          Find answers to common questions about AutrixGPT, billing, and automations.
         </p>
       </div>
 
@@ -64,7 +64,7 @@ export default function FAQPage() {
         <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>Our support team is always ready to assist you.</p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
           <Button href="/contact" variant="primary">Contact Support</Button>
-          <Button href="/help" variant="secondary">Visit Help Center</Button>
+          <Button href="/chat" variant="secondary">Visit Help Center</Button>
         </div>
       </div>
     </div>

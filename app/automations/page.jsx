@@ -3,7 +3,7 @@ import { automationsData } from '../../data/automations';
 import Button from '../../components/Button';
 
 export const metadata = {
-  title: 'Automations | Automik',
+  title: 'Automations | AutrixGPT',
   description: 'Explore our integrations and automations for Instagram, WhatsApp, Gmail, Shopify, and more.',
 };
 
@@ -13,7 +13,7 @@ export default function AutomationsPage() {
       <div className="section-header">
         <h1 className="section-title">Automations Directory</h1>
         <p className="section-subtitle">
-          Connect your favorite platforms and let Automik handle the repetitive tasks seamlessly.
+          Connect your favorite platforms and let AutrixGPT handle the repetitive tasks seamlessly.
         </p>
       </div>
 

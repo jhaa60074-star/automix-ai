@@ -13,8 +13,8 @@ export function generateMetadata({ params }) {
   if (!data) return { title: 'Not Found' };
   
   return {
-    title: `${data.title} | Automik Legal`,
-    description: `Automik's ${data.title}.`,
+    title: `${data.title} | AutrixGPT Legal`,
+    description: `AutrixGPT's ${data.title}.`,
   };
 }
 

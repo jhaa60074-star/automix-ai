@@ -43,7 +43,7 @@ export default function LoginPage() {
       <div className="card" style={{ width: '100%', maxWidth: '400px', padding: '2.5rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <h1 style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>Welcome back</h1>
-          <p style={{ color: 'var(--text-secondary)' }}>Log in to your Automik account</p>
+          <p style={{ color: 'var(--text-secondary)' }}>Log in to your AutrixGPT account</p>
         </div>
 
         <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>

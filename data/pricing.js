@@ -4,7 +4,7 @@ export const pricingPlans = [
     name: 'Free',
     price: '$0',
     billingPeriod: 'forever',
-    description: 'Perfect to explore Automik’s AI capabilities.',
+    description: 'Perfect to explore AutrixGPT’s AI capabilities.',
     features: [
       'Basic AI Assistant',
       'Up to 10 file analyses/month',

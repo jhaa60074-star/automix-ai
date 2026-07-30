@@ -4,22 +4,22 @@ import Link from 'next/link';
 
 export function generateStaticParams() {
   return helpData.map((cat) => ({
-    topic: cat.id,
+    slug: cat.id,
   }));
 }
 
 export function generateMetadata({ params }) {
-  const category = helpData.find((c) => c.id === params.topic);
+  const category = helpData.find((c) => c.id === params.slug);
   if (!category) return { title: 'Not Found' };
   
   return {
-    title: `${category.title} | Automik Help`,
+    title: `${category.title} | AutrixGPT Help`,
     description: category.description,
   };
 }
 
 export default function HelpTopicPage({ params }) {
-  const category = helpData.find((c) => c.id === params.topic);
+  const category = helpData.find((c) => c.id === params.slug);
   
   if (!category) {
     notFound();

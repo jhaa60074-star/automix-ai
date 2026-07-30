@@ -14,7 +14,7 @@ export function generateMetadata({ params }) {
   if (!service) return { title: 'Service Not Found' };
   
   return {
-    title: `${service.title} | Automik Services`,
+    title: `${service.title} | AutrixGPT Services`,
     description: service.shortDescription,
   };
 }
