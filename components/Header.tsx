@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
 import Button from './Button';
@@ -9,6 +9,8 @@ import { createClient } from '../utils/supabase/client';
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [user, setUser] = useState<any>(null);
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
+  const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const supabase = createClient();
 
@@ -40,12 +42,22 @@ export default function Header() {
     router.refresh();
   };
 
+  const handleLoginClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setIsLoggingIn(true);
+    // Prefetch and navigate with transition for immediate feedback
+    router.prefetch('/login');
+    startTransition(() => {
+      router.push('/login');
+    });
+  };
+
   return (
     <header className="header">
       <div className="container header-container">
         <div className="logo">
           <Link href="/">
-            <span className="text-gradient" style={{ fontWeight: '700', fontSize: '1.5rem' }}>AUTRIXGPT</span>
+            <span className="text-gradient logo-text" style={{ fontWeight: '700' }}>AUTRIXGPT</span>
           </Link>
         </div>
 
@@ -76,7 +88,9 @@ export default function Header() {
             </>
           ) : (
             <>
-              <Link href="/login" className="nav-link" style={{ marginLeft: '1rem' }}>Login</Link>
+              <Link href="/login" className="nav-link" style={{ marginLeft: '1rem' }} onClick={handleLoginClick}>
+                {isLoggingIn ? <span style={{ opacity: 0.7 }}>Loading...</span> : 'Login'}
+              </Link>
               <Button href="/signup" variant="primary">Start Now</Button>
             </>
           )}
@@ -108,7 +122,9 @@ export default function Header() {
               </>
             ) : (
               <>
-                <Link href="/login" className="nav-mobile-link" onClick={toggleMobileMenu} style={{ marginTop: '1rem' }}>Login</Link>
+                <Link href="/login" className="nav-mobile-link" onClick={(e) => { toggleMobileMenu(); handleLoginClick(e); }} style={{ marginTop: '1rem' }}>
+                  {isLoggingIn ? 'Loading...' : 'Login'}
+                </Link>
                 <Button href="/signup" variant="primary" style={{ width: '100%', marginTop: '0.5rem' }}>Start Now</Button>
               </>
             )}

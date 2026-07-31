@@ -64,20 +64,20 @@
 
 .grid-3 {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
 }
 @media (min-width: 768px) {
-  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 }
 
 .grid-4 {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
 }
 @media (min-width: 640px) {
-  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 }
 @media (min-width: 1024px) {
   .grid-4 { grid-template-columns: repeat(4, 1fr); }
@@ -91,6 +91,8 @@
   padding: 2rem;
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -113,6 +115,29 @@
 .card-desc {
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: 1rem;
+    min-height: 240px;
+  }
+  .card-icon {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .card-desc {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 .card-link {

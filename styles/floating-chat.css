@@ -716,4 +716,11 @@
   .fc-window.fc-open {
     transform: translateY(0);
   }
+  .fc-trigger-label {
+    display: none;
+  }
+  .fc-trigger {
+    padding: 1rem;
+    border-radius: 50%;
+  }
 }

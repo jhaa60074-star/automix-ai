@@ -227,3 +227,32 @@
   color: var(--text-muted);
   font-size: 0.875rem;
 }
+
+/* Mobile Overrides */
+.logo-text {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .logo-text {
+    font-size: 1.25rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .mobile-menu-btn {
+    padding: 0.5rem;
+    margin-right: -0.5rem;
+  }
+  
+  .nav-mobile-actions .theme-toggle {
+    align-self: flex-start;
+  }
+
+  .footer {
+    padding-bottom: 6rem;
+  }
+}
