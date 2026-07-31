@@ -28,8 +28,7 @@ export default function LoginPage() {
       if (error) {
         setError(error.message);
       } else {
-        router.push('/dashboard');
-        router.refresh(); // Refresh layout to update header state
+        window.location.href = '/dashboard';
       }
     } catch (err: any) {
       setError(err.message || 'An unexpected error occurred.');

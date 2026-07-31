@@ -64,7 +64,7 @@
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.75rem;
 }
 @media (min-width: 768px) {
@@ -73,7 +73,7 @@
 
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.75rem;
 }
 @media (min-width: 640px) {
@@ -110,17 +110,23 @@
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .card-desc {
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 767px) {
   .card {
-    padding: 1rem;
+    padding: 1rem 0.75rem;
     min-height: 240px;
+    box-sizing: border-box;
+    width: 100%;
   }
   .card-icon {
     font-size: 1.75rem;

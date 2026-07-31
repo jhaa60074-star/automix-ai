@@ -32,7 +32,7 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>Resources</h4>
-            <Link href="/chat">Help Center</Link>
+            <Link href="/?openChat=true">Help Center</Link>
             <Link href="/faq">FAQ</Link>
             <Link href="/contact">Contact Support</Link>
             <Link href="/about">About</Link>

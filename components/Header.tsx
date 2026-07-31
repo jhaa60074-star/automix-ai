@@ -9,8 +9,6 @@ import { createClient } from '../utils/supabase/client';
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [user, setUser] = useState<any>(null);
-  const [isLoggingIn, setIsLoggingIn] = useState(false);
-  const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const supabase = createClient();
 
@@ -38,18 +36,7 @@ export default function Header() {
   const handleLogout = async () => {
     await supabase.auth.signOut();
     setUser(null);
-    router.push('/login');
-    router.refresh();
-  };
-
-  const handleLoginClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    setIsLoggingIn(true);
-    // Prefetch and navigate with transition for immediate feedback
-    router.prefetch('/login');
-    startTransition(() => {
-      router.push('/login');
-    });
+    window.location.href = '/login';
   };
 
   return (
@@ -69,7 +56,7 @@ export default function Header() {
           <div className="dropdown">
             <button className="nav-link dropdown-toggle">Resources ▾</button>
             <div className="dropdown-menu">
-              <Link href="/help" className="dropdown-item">Help Center</Link>
+              <Link href="/?openChat=true" className="dropdown-item">Help Center</Link>
               <Link href="/faq" className="dropdown-item">FAQ</Link>
               <Link href="/contact" className="dropdown-item">Contact Support</Link>
               <Link href="/security" className="dropdown-item">Security</Link>
@@ -88,8 +75,8 @@ export default function Header() {
             </>
           ) : (
             <>
-              <Link href="/login" className="nav-link" style={{ marginLeft: '1rem' }} onClick={handleLoginClick}>
-                {isLoggingIn ? <span style={{ opacity: 0.7 }}>Loading...</span> : 'Login'}
+              <Link href="/login" className="nav-link" style={{ marginLeft: '1rem' }}>
+                Login
               </Link>
               <Button href="/signup" variant="primary">Start Now</Button>
             </>
@@ -108,7 +95,7 @@ export default function Header() {
           <Link href="/services" className="nav-mobile-link" onClick={toggleMobileMenu}>Services</Link>
           <Link href="/automations" className="nav-mobile-link" onClick={toggleMobileMenu}>Automations</Link>
           <Link href="/pricing" className="nav-mobile-link" onClick={toggleMobileMenu}>Pricing</Link>
-          <Link href="/help" className="nav-mobile-link" onClick={toggleMobileMenu}>Help Center</Link>
+          <Link href="/?openChat=true" className="nav-mobile-link" onClick={toggleMobileMenu}>Help Center</Link>
           <Link href="/faq" className="nav-mobile-link" onClick={toggleMobileMenu}>FAQ</Link>
           <Link href="/contact" className="nav-mobile-link" onClick={toggleMobileMenu}>Contact</Link>
           <Link href="/about" className="nav-mobile-link" onClick={toggleMobileMenu}>About</Link>
@@ -122,8 +109,8 @@ export default function Header() {
               </>
             ) : (
               <>
-                <Link href="/login" className="nav-mobile-link" onClick={(e) => { toggleMobileMenu(); handleLoginClick(e); }} style={{ marginTop: '1rem' }}>
-                  {isLoggingIn ? 'Loading...' : 'Login'}
+                <Link href="/login" className="nav-mobile-link" onClick={toggleMobileMenu} style={{ marginTop: '1rem' }}>
+                  Login
                 </Link>
                 <Button href="/signup" variant="primary" style={{ width: '100%', marginTop: '0.5rem' }}>Start Now</Button>
               </>
