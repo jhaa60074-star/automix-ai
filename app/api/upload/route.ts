@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '../../../utils/supabase/server';
+import { FileParser } from '../../../lib/files/parser';
+import { AutomationHooks } from '../../../lib/automation/hooks';
 
 export async function POST(req: NextRequest) {
   try {
@@ -35,8 +37,17 @@ export async function POST(req: NextRequest) {
       throw error;
     }
     
+    // Extract text using File Intelligence (Phase 3B)
+    try {
+      const extractedText = await FileParser.extractText(buffer, file.type, file.name);
+      console.log(`[File Intelligence] Extracted ${extractedText.length} characters from ${file.name}`);
+      // Future: Store extractedText in vector DB or memory table
+    } catch (parseError) {
+      console.warn('[File Intelligence] Skipping parse for unsupported or unreadable file:', parseError);
+    }
+    
     // Insert record into public.attachments table
-    const { error: dbError } = await supabase
+    const { data: attachmentData, error: dbError } = await supabase
       .from('attachments')
       .insert({
         user_id: user.id,
@@ -45,10 +56,15 @@ export async function POST(req: NextRequest) {
         file_name: file.name,
         file_type: file.type,
         size: file.size
-      });
+      })
+      .select()
+      .single();
 
     if (dbError) {
       console.error('Failed to insert file record into attachments:', dbError);
+    } else {
+      // Trigger Automation Hook
+      await AutomationHooks.onFileUploaded(user.id, attachmentData.id);
     }
 
     return NextResponse.json({ 

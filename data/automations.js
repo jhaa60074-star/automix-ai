@@ -142,5 +142,23 @@ export const automationsData = [
     howItWorks: 'Connect Google Calendar. Map event details (Title, Time, Attendees) from upstream triggers in your automation flow.',
     status: 'Setup Required',
     helpLink: '/help/google-calendar'
+  },
+  {
+    id: 'website',
+    slug: 'website',
+    title: 'Website Automation',
+    icon: '🌐',
+    category: 'Web',
+    shortDescription: 'AI Chat Widget, Form Capture, and Webhook integrations.',
+    description: 'Connect your website to capture leads directly into your database. Deploy an AI chat widget to answer visitor questions 24/7.',
+    whoItsFor: 'Marketers, Agencies, and E-commerce brands.',
+    useCases: [
+      'Capturing leads from embedded forms',
+      'Deploying an AI assistant on your homepage',
+      'Triggering webhooks on specific page visits'
+    ],
+    howItWorks: 'Add a simple script tag to your website (WordPress, Shopify, Webflow, or plain HTML) to enable widgets and tracking.',
+    status: 'Setup Required',
+    helpLink: '/help/website'
   }
 ];

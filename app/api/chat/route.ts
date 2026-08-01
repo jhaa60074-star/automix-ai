@@ -1,19 +1,18 @@
 import { NextRequest } from 'next/server';
-import { StreamHandler } from '../../../utils/ai/stream-handler';
-
-export const runtime = 'edge'; // Optional: Use Edge runtime for better streaming performance
+import { AIService } from '../../../lib/ai/service';
+import { createClient } from '../../../utils/supabase/server';
 
 export async function POST(req: NextRequest) {
   try {
-    const { messages } = await req.json();
+    const { messages, chatId, model = 'auto' } = await req.json();
     
-    // In the future, this will extract the last message and send it to the AIProvider
-    // const responseStream = await aiProvider.generateStream(messages);
+    // Auth check
+    const supabase = createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    const userId = user?.id || 'anonymous';
     
-    // For now, we mock the stream
-    const mockResponseText = "This is a mock response from the AI architecture. The real provider is not connected yet, but the streaming architecture is fully functional!";
-    const generator = StreamHandler.mockStreamGenerator(mockResponseText);
-    const stream = StreamHandler.createReadableStream(generator);
+    // Generate stream using the new AI Service architecture
+    const stream = await AIService.generateChatStream(chatId || 'default-chat', messages, model, userId);
 
     return new Response(stream, {
       headers: {

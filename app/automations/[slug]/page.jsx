@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { automationsData } from '../../../data/automations';
 import Button from '../../../components/Button';
 import Link from 'next/link';
+import { createClient } from '../../../utils/supabase/server';
 
 export function generateStaticParams() {
   return automationsData.map((automation) => ({
@@ -19,12 +20,15 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function AutomationDetailPage({ params }) {
+export default async function AutomationDetailPage({ params }) {
   const automation = automationsData.find((a) => a.slug === params.slug);
   
   if (!automation) {
     notFound();
   }
+
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
 
   return (
     <div className="container" style={{ padding: '4rem 1.5rem', maxWidth: '800px' }}>
@@ -55,9 +59,13 @@ export default function AutomationDetailPage({ params }) {
         <div style={{ marginTop: '2rem', borderTop: '1px solid var(--border-color)', paddingTop: '1.5rem' }}>
           <h4 style={{ marginBottom: '1rem', fontSize: '1rem' }}>Setup Preview</h4>
           <div style={{ background: 'var(--card-bg)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)', opacity: 0.8 }}>
-             <p style={{ margin: 0, color: 'var(--text-muted)', textAlign: 'center' }}>Connect your {automation.title.split(' ')[0]} account to see available triggers and actions.</p>
+             <p style={{ margin: 0, color: 'var(--text-muted)', textAlign: 'center' }}>
+               {user ? `Go to your dashboard to configure ${automation.title}.` : `Connect your ${automation.title.split(' ')[0]} account to see available triggers and actions.`}
+             </p>
              <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
-                <Button disabled variant="secondary">Connect Account</Button>
+                <Button href={user ? `/dashboard/automations/${automation.slug}` : `/login?next=/dashboard/automations/${automation.slug}`} variant="secondary">
+                  {user ? 'Configure in Dashboard' : 'Connect Account'}
+                </Button>
              </div>
           </div>
         </div>
@@ -79,7 +87,9 @@ export default function AutomationDetailPage({ params }) {
       </div>
 
       <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', borderTop: '1px solid var(--border-color)', paddingTop: '3rem' }}>
-        <Button href="/login" style={{ padding: '0.875rem 2rem', fontSize: '1.1rem' }}>Get Started</Button>
+        <Button href={user ? `/dashboard/automations/${automation.slug}` : `/login?next=/dashboard/automations/${automation.slug}`} style={{ padding: '0.875rem 2rem', fontSize: '1.1rem' }}>
+          {user ? 'Go to Dashboard' : 'Get Started'}
+        </Button>
         <Link href={automation.helpLink} style={{ color: 'var(--primary-color)', fontWeight: '500' }}>View Setup Guide</Link>
       </div>
     </div>
