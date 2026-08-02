@@ -6,8 +6,63 @@ import FooterWrapper from '@/components/FooterWrapper';
 import FloatingChat from '@/components/FloatingChat';
 
 export const metadata = {
-  title: 'AutrixGPT - AI SaaS Platform',
-  description: 'AI assistance, research, file analysis, and business automation platform.',
+  metadataBase: new URL('https://www.autrixgpt.com'),
+  title: {
+    default: 'AutrixGPT | The Intelligent Automation Engine For Your Business',
+    template: '%s | AutrixGPT'
+  },
+  description: 'Seamlessly chat with an AI assistant, analyze complex files, research data, and deploy automated workflows across Instagram, WhatsApp, Gmail, and more.',
+  keywords: ['AI Automation', 'Business Automation', 'Instagram Automation', 'WhatsApp AI', 'File Analysis AI', 'AutrixGPT'],
+  authors: [{ name: 'AutrixGPT' }],
+  creator: 'AutrixGPT',
+  publisher: 'AutrixGPT',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: 'AutrixGPT | The Intelligent Automation Engine',
+    description: 'Seamlessly chat with an AI assistant, analyze complex files, research data, and deploy automated workflows.',
+    url: 'https://www.autrixgpt.com',
+    siteName: 'AutrixGPT',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'AutrixGPT - Intelligent Automation Engine',
+      }
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AutrixGPT | The Intelligent Automation Engine',
+    description: 'Seamlessly chat with an AI assistant, analyze complex files, research data, and deploy automated workflows.',
+    creator: '@autrixgpt',
+    images: ['/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
+  alternates: {
+    canonical: 'https://www.autrixgpt.com',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -39,9 +94,9 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <FooterWrapper />
-        <React.Suspense fallback={null}>
+        <Suspense fallback={null}>
           <FloatingChat />
-        </React.Suspense>
+        </Suspense>
       </body>
     </html>
   );
