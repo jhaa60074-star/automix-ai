@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
+    "prebuild": "node -e \"fs.rmSync('.next-build', {force: true, recursive: true}); fs.rmSync('tsconfig.tsbuildinfo', {force: true});\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
