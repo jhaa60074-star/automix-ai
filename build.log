@@ -848,3 +848,1161 @@ TypeError: Cannot read properties of null (reading 'useContext')
     at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
     at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
     at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/automations/telegram". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/help". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/automations/shopify". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/automations/whatsapp". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+   Generating static pages (34/69) 
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/automations/instagram". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/pricing". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/help/account". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/automations/google-calendar". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/help/getting-started". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/help-center". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/automations/website". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/automations/google-drive". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/help/ai-assistant". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/help/instagram". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/help/file-uploads". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/services/ai-assistant". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/services/research-analysis". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/services". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+   Generating static pages (51/69) 
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/services/file-analysis". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/privacy-policy". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/services/website-connection". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/cookie-policy". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/refund-policy". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/terms-of-service". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/legal-notices". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/data-privacy". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/disclaimer". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908) {
+  digest: '350626496'
+}
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/acceptable-use". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+
+Error occurred prerendering page "/subprocessors". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109421)
+    at h (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:29398)
+    at p (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\438.js:28:21402)
+    at au (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+Error: <Html> should not be imported outside of pages/_document.
+Read more: https://nextjs.org/docs/messages/no-document-import-in-page
+    at Q (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\pages.runtime.prod.js:16:5430)
+    at I (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\1682.js:6:1263)
+    at renderWithHooks (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5658:16)
+    at renderIndeterminateComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5732:15)
+    at renderElement (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5957:7)
+    at renderNodeDestructiveImpl (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:6115:11)
+    at renderNodeDestructive (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:6087:14)
+    at finishClassComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5688:3)
+    at renderClassComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5696:3)
+    at renderElement (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5954:7)
+
+Error occurred prerendering page "/404". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: <Html> should not be imported outside of pages/_document.
+Read more: https://nextjs.org/docs/messages/no-document-import-in-page
+    at Q (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\pages.runtime.prod.js:16:5430)
+    at I (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\1682.js:6:1263)
+    at renderWithHooks (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5658:16)
+    at renderIndeterminateComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5732:15)
+    at renderElement (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5957:7)
+    at renderNodeDestructiveImpl (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:6115:11)
+    at renderNodeDestructive (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:6087:14)
+    at finishClassComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5688:3)
+    at renderClassComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5696:3)
+    at renderElement (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5954:7)
+Error: <Html> should not be imported outside of pages/_document.
+Read more: https://nextjs.org/docs/messages/no-document-import-in-page
+    at Q (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\pages.runtime.prod.js:16:5430)
+    at I (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\1682.js:6:1263)
+    at renderWithHooks (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5658:16)
+    at renderIndeterminateComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5732:15)
+    at renderElement (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5957:7)
+    at renderNodeDestructiveImpl (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:6115:11)
+    at renderNodeDestructive (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:6087:14)
+    at finishClassComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5688:3)
+    at renderClassComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5696:3)
+    at renderElement (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5954:7)
+
+Error occurred prerendering page "/500". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: <Html> should not be imported outside of pages/_document.
+Read more: https://nextjs.org/docs/messages/no-document-import-in-page
+    at Q (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\next\dist\compiled\next-server\pages.runtime.prod.js:16:5430)
+    at I (C:\Users\ashish kumar jha\Downloads\AUTOMIK\.next\server\chunks\1682.js:6:1263)
+    at renderWithHooks (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5658:16)
+    at renderIndeterminateComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5732:15)
+    at renderElement (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5957:7)
+    at renderNodeDestructiveImpl (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:6115:11)
+    at renderNodeDestructive (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:6087:14)
+    at finishClassComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5688:3)
+    at renderClassComponent (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5696:3)
+    at renderElement (C:\Users\ashish kumar jha\Downloads\AUTOMIK\node_modules\react-dom\cjs\react-dom-server.browser.development.js:5954:7)
