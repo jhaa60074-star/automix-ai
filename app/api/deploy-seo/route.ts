@@ -8,11 +8,10 @@ export async function GET() {
   try {
     const cwd = process.cwd();
     
-    // 1. Commit and push the fix
     let commitOutput = '';
     try {
       const { stdout: addOut } = await execAsync('git add .', { cwd });
-      const { stdout: commitOut } = await execAsync('git commit -m "Fix: Suspense import in layout and finalize SEO"', { cwd });
+      const { stdout: commitOut } = await execAsync('git commit -m "Fix: Create production help-center and data-deletion routes"', { cwd });
       const { stdout: pushOut } = await execAsync('git push origin main', { cwd });
       commitOutput = `${addOut}\n${commitOut}\n${pushOut}`;
     } catch (e: any) {

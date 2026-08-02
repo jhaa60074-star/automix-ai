@@ -56,7 +56,7 @@ export default function Header() {
           <div className="dropdown">
             <button className="nav-link dropdown-toggle">Resources ▾</button>
             <div className="dropdown-menu">
-              <Link href="/?openChat=true" className="dropdown-item">Help Center</Link>
+              <Link href="/help-center" className="dropdown-item">Help Center</Link>
               <Link href="/faq" className="dropdown-item">FAQ</Link>
               <Link href="/contact" className="dropdown-item">Contact Support</Link>
               <Link href="/security" className="dropdown-item">Security</Link>
@@ -95,7 +95,7 @@ export default function Header() {
           <Link href="/services" className="nav-mobile-link" onClick={toggleMobileMenu}>Services</Link>
           <Link href="/automations" className="nav-mobile-link" onClick={toggleMobileMenu}>Automations</Link>
           <Link href="/pricing" className="nav-mobile-link" onClick={toggleMobileMenu}>Pricing</Link>
-          <Link href="/?openChat=true" className="nav-mobile-link" onClick={toggleMobileMenu}>Help Center</Link>
+          <Link href="/help-center" className="nav-mobile-link" onClick={toggleMobileMenu}>Help Center</Link>
           <Link href="/faq" className="nav-mobile-link" onClick={toggleMobileMenu}>FAQ</Link>
           <Link href="/contact" className="nav-mobile-link" onClick={toggleMobileMenu}>Contact</Link>
           <Link href="/about" className="nav-mobile-link" onClick={toggleMobileMenu}>About</Link>

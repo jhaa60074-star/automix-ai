@@ -57,7 +57,7 @@ export default function Home() {
               <p className="card-desc">Advanced conversational AI for problem-solving and task management.</p>
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
                 <Link href="/?openChat=true" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
-                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+                <Link href="/help-center" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
               </div>
             </div>
             
@@ -67,7 +67,7 @@ export default function Home() {
               <p className="card-desc">Extract insights from vast amounts of data across multiple connected sources.</p>
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
                 <Link href="/?openChat=true" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
-                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+                <Link href="/help-center" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
               </div>
             </div>
             
@@ -77,7 +77,7 @@ export default function Home() {
               <p className="card-desc">Instantly analyze PDFs, Excel sheets, CSVs, and documents.</p>
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
                 <Link href="/?openChat=true" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
-                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+                <Link href="/help-center" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
               </div>
             </div>
             
@@ -87,7 +87,7 @@ export default function Home() {
               <p className="card-desc">Connect and automate Instagram, WhatsApp, Gmail, Shopify, and more.</p>
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
                 <Link href="/automations" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
-                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+                <Link href="/help-center" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
               </div>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function Home() {
               <p className="card-desc">Auto DM replies, Comment-to-DM, keyword triggers, and custom message workflows.</p>
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
                 <Link href="/automations/instagram" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
-                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+                <Link href="/help-center" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
               </div>
             </div>
             <div className="card">
@@ -189,7 +189,7 @@ export default function Home() {
               <p className="card-desc">AI customer support replies, product inquiries, and seamless business workflows.</p>
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
                 <Link href="/automations/whatsapp" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
-                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+                <Link href="/help-center" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
               </div>
             </div>
             <div className="card">
@@ -198,7 +198,7 @@ export default function Home() {
               <p className="card-desc">AI-assisted email replies, categorization, smart summaries, and notifications.</p>
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
                 <Link href="/automations/gmail" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
-                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+                <Link href="/help-center" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
               </div>
             </div>
             <div className="card">
@@ -207,7 +207,7 @@ export default function Home() {
               <p className="card-desc">Advanced bot automation, smart AI replies, and custom channel workflows.</p>
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
                 <Link href="/automations/telegram" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
-                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+                <Link href="/help-center" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
               </div>
             </div>
             <div className="card">
@@ -216,7 +216,7 @@ export default function Home() {
               <p className="card-desc">Automate order updates, product workflows, and personalized customer interactions.</p>
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
                 <Link href="/automations/shopify" className="btn btn-primary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Start Now</Link>
-                <Link href="/?openChat=true" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
+                <Link href="/help-center" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', flex: 1, textAlign: 'center', fontSize: '0.9rem' }}>Help Center</Link>
               </div>
             </div>
             <div className="card">

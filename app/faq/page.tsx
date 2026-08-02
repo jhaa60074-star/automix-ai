@@ -64,7 +64,7 @@ export default function FAQPage() {
         <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>Our support team is always ready to assist you.</p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
           <Button href="/contact" variant="primary">Contact Support</Button>
-          <Button href="/?openChat=true" variant="secondary">Visit Help Center</Button>
+          <Button href="/help-center" variant="secondary">Visit Help Center</Button>
         </div>
       </div>
     </div>

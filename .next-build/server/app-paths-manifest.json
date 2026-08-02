@@ -1,4 +1,4 @@
 {
-  "/api/deploy-seo/route": "app/api/deploy-seo/route.js",
-  "/api/git-log/route": "app/api/git-log/route.js"
+  "/api/build/route": "app/api/build/route.js",
+  "/help-center/page": "app/help-center/page.js"
 }
