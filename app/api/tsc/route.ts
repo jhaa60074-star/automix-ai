@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { NextResponse } from 'next/server';
 import { exec } from 'child_process';
 import util from 'util';
@@ -7,22 +9,10 @@ const execAsync = util.promisify(exec);
 export async function GET() {
   try {
     const cwd = process.cwd();
+    const { stdout: status } = await execAsync('git status', { cwd });
+    const { stdout: log } = await execAsync('git log -2 --format="%H | %s | %cd"', { cwd });
     
-    // 1. Git add
-    await execAsync('git add .', { cwd });
-    
-    // 2. Git commit
-    const commitMsg = "Fix: Complete production audit, absolute alias migration, and build repair";
-    await execAsync(`git commit -m "${commitMsg}"`, { cwd });
-    
-    // 3. Git push
-    await execAsync('git push', { cwd });
-    
-    // 4. Get latest commit hash and date
-    const { stdout: hash } = await execAsync('git log -1 --format="%H"', { cwd });
-    const { stdout: date } = await execAsync('git log -1 --format="%cd"', { cwd });
-    
-    return NextResponse.json({ success: true, hash: hash.trim(), date: date.trim() });
+    return NextResponse.json({ success: true, status, log });
   } catch (error: any) {
     return NextResponse.json({ success: false, stdout: error.stdout, stderr: error.stderr, message: error.message });
   }
