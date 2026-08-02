@@ -1,5 +1,5 @@
-import { BaseProvider, AIProviderContext, AIProviderResponse } from './base';
-import { StreamHandler } from '../ai/streaming';
+import { BaseProvider, AIProviderContext, AIProviderResponse } from '@/lib/providers/base';
+import { StreamHandler } from '@/lib/ai/streaming';
 
 export class AnthropicProvider extends BaseProvider {
   async generate(context: AIProviderContext): Promise<AIProviderResponse> {

@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
-import { faqData } from '../../data/faq';
-import Button from '../../components/Button';
+import { faqData } from '@/data/faq';
+import Button from '@/components/Button';
 
 export default function FAQPage() {
   const [activeCategory, setActiveCategory] = useState<string>('All');

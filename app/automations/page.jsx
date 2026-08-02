@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { automationsData } from '../../data/automations';
-import Button from '../../components/Button';
+import { automationsData } from '@/data/automations';
+import Button from '@/components/Button';
 
 export const metadata = {
   title: 'Automations | AutrixGPT',

@@ -1,8 +1,8 @@
 /**
  * Internal automation hooks that can trigger workflows (e.g. n8n).
  */
-import { AutomationQueue } from './queue';
-import { AutomationEngine } from './engine';
+import { AutomationQueue } from '@/lib/automation/queue';
+import { AutomationEngine } from '@/lib/automation/engine';
 
 export class AutomationHooks {
   /**

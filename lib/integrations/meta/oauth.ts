@@ -1,4 +1,4 @@
-import { getScopesString } from './permissions';
+import { getScopesString } from '@/lib/integrations/meta/permissions';
 
 const META_API_VERSION = 'v19.0';
 const FACEBOOK_OAUTH_URL = `https://www.facebook.com/${META_API_VERSION}/dialog/oauth`;

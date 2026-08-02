@@ -1,4 +1,4 @@
-import { Message } from './provider-interface';
+import { Message } from '@/utils/ai/provider-interface';
 
 /**
  * MemoryManager is responsible for managing the conversation context.

@@ -1,4 +1,4 @@
-import { AIService } from '../ai/service';
+import { AIService } from '@/lib/ai/service';
 
 export class ShopifyIntegration {
   static async execute(payload: any) {

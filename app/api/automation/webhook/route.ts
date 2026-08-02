@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { WebhookParser } from '../../../../lib/automation/webhooks';
+import { WebhookParser } from '@/lib/automation/webhooks';
 
 export async function POST(req: NextRequest) {
   try {

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { helpData } from '../../../data/help';
+import { helpData } from '@/data/help';
 import Link from 'next/link';
 
 export function generateStaticParams() {

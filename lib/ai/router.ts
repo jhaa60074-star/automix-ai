@@ -1,9 +1,9 @@
-import { BaseProvider } from '../providers/base';
-import { OpenRouterProvider } from '../providers/openrouter';
-import { OllamaProvider } from '../providers/ollama';
-import { OpenAIProvider } from '../providers/openai';
-import { GeminiProvider } from '../providers/gemini';
-import { AnthropicProvider } from '../providers/anthropic';
+import { BaseProvider } from '@/lib/providers/base';
+import { OpenRouterProvider } from '@/lib/providers/openrouter';
+import { OllamaProvider } from '@/lib/providers/ollama';
+import { OpenAIProvider } from '@/lib/providers/openai';
+import { GeminiProvider } from '@/lib/providers/gemini';
+import { AnthropicProvider } from '@/lib/providers/anthropic';
 
 export class AIRouter {
   static getProvider(modelName: string): BaseProvider {

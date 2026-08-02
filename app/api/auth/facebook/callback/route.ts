@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { MetaOAuth } from '../../../../../lib/integrations/meta/oauth';
-import { TokenService } from '../../../../../lib/integrations/meta/tokens';
-import { MetaPages } from '../../../../../lib/integrations/meta/pages';
-import { InstagramAccounts } from '../../../../../lib/integrations/meta/instagram';
-import { createClient } from '../../../../../utils/supabase/server';
+import { MetaOAuth } from '@/lib/integrations/meta/oauth';
+import { TokenService } from '@/lib/integrations/meta/tokens';
+import { MetaPages } from '@/lib/integrations/meta/pages';
+import { InstagramAccounts } from '@/lib/integrations/meta/instagram';
+import { createClient } from '@/utils/supabase/server';
 
 export async function GET(req: NextRequest) {
   const url = new URL(req.url);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Message } from '../../utils/ai/provider-interface';
+import { Message } from '@/utils/ai/provider-interface';
 
 interface MessageBubbleProps {
   message: Message;

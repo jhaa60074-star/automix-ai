@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
-import { automationsData } from '../../../data/automations';
-import Button from '../../../components/Button';
+import { automationsData } from '@/data/automations';
+import Button from '@/components/Button';
 import Link from 'next/link';
-import { createClient } from '../../../utils/supabase/server';
+import { createClient } from '@/utils/supabase/server';
 
 export function generateStaticParams() {
   return automationsData.map((automation) => ({

@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { servicesData } from '../../data/services';
-import Button from '../../components/Button';
+import { servicesData } from '@/data/services';
+import Button from '@/components/Button';
 
 export const metadata = {
   title: 'Services | AutrixGPT',

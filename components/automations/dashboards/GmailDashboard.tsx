@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import StatCard from '../StatCard';
-import ToggleSwitch from '../ToggleSwitch';
-import Button from '../../Button';
+import StatCard from '@/components/automations/StatCard';
+import ToggleSwitch from '@/components/automations/ToggleSwitch';
+import Button from '@/components/Button';
 
 export default function GmailDashboard({ automation, user }: any) {
   const [isActive, setIsActive] = useState(false);

@@ -1,7 +1,7 @@
-import { PDFParser } from './pdf';
-import { DOCXParser } from './docx';
-import { CSVParser } from './csv';
-import { ExcelParser } from './excel';
+import { PDFParser } from '@/lib/files/pdf';
+import { DOCXParser } from '@/lib/files/docx';
+import { CSVParser } from '@/lib/files/csv';
+import { ExcelParser } from '@/lib/files/excel';
 
 export class FileParser {
   /**

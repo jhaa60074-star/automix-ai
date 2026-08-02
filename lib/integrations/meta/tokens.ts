@@ -1,4 +1,4 @@
-import { createClient } from '../../../utils/supabase/server';
+import { createClient } from '@/utils/supabase/server';
 import crypto from 'crypto';
 
 const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY || 'default-encryption-key-32-chars!!'; // Must be 32 bytes

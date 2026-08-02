@@ -2,9 +2,9 @@
 import Link from 'next/link';
 import { useState, useEffect, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
-import ThemeToggle from './ThemeToggle';
-import Button from './Button';
-import { createClient } from '../utils/supabase/client';
+import ThemeToggle from '@/components/ThemeToggle';
+import Button from '@/components/Button';
+import { createClient } from '@/utils/supabase/client';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

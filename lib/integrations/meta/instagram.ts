@@ -1,5 +1,5 @@
 const FACEBOOK_GRAPH_URL = `https://graph.facebook.com/v19.0`;
-import { createClient } from '../../../utils/supabase/server';
+import { createClient } from '@/utils/supabase/server';
 
 export class InstagramAccounts {
   static async getBusinessAccountFromPage(pageId: string, pageAccessToken: string) {

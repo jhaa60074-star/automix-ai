@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
-import { legalData } from '../../../data/legal';
-import LegalLayout from '../../../components/LegalLayout';
+import { legalData } from '@/data/legal';
+import LegalLayout from '@/components/LegalLayout';
 
 export function generateStaticParams() {
   return Object.keys(legalData).map((slug) => ({

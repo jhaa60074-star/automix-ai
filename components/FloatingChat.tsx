@@ -3,10 +3,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { createClient } from '../utils/supabase/client';
-import { Message } from '../utils/ai/provider-interface';
-import MarkdownRenderer from './MarkdownRenderer';
-import Button from './Button';
+import { createClient } from '@/utils/supabase/client';
+import { Message } from '@/utils/ai/provider-interface';
+import MarkdownRenderer from '@/components/MarkdownRenderer';
+import Button from '@/components/Button';
 
 interface ChatSession {
   id: string;

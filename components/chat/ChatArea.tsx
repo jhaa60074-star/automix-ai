@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import MessageBubble from './MessageBubble';
-import { Message } from '../../utils/ai/provider-interface';
-import FileUpload from './FileUpload';
-import ExportMenu from './ExportMenu';
+import MessageBubble from '@/components/chat/MessageBubble';
+import { Message } from '@/utils/ai/provider-interface';
+import FileUpload from '@/components/chat/FileUpload';
+import ExportMenu from '@/components/chat/ExportMenu';
 
 interface ChatAreaProps {
   initialMessages?: Message[];

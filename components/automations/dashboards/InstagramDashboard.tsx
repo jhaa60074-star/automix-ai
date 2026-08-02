@@ -1,8 +1,8 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import StatCard from '../StatCard';
-import ToggleSwitch from '../ToggleSwitch';
-import Button from '../../Button';
+import StatCard from '@/components/automations/StatCard';
+import ToggleSwitch from '@/components/automations/ToggleSwitch';
+import Button from '@/components/Button';
 
 export default function InstagramDashboard({ automation, user }: any) {
   const [isActive, setIsActive] = useState(false);

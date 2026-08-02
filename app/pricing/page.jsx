@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { pricingPlans } from '../../data/pricing';
-import Button from '../../components/Button';
+import { pricingPlans } from '@/data/pricing';
+import Button from '@/components/Button';
 
 export const metadata = {
   title: 'Pricing | AutrixGPT',

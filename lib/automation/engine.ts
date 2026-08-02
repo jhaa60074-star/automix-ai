@@ -1,6 +1,6 @@
-import { AutomationQueue, AutomationTask } from './queue';
-import { AutomationLogs } from './logs';
-import { AutomationAnalytics } from './analytics';
+import { AutomationQueue, AutomationTask } from '@/lib/automation/queue';
+import { AutomationLogs } from '@/lib/automation/logs';
+import { AutomationAnalytics } from '@/lib/automation/analytics';
 
 export class AutomationEngine {
   /**

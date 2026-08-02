@@ -1,4 +1,4 @@
-import { createClient } from '../../utils/supabase/server';
+import { createClient } from '@/utils/supabase/server';
 
 export interface LogEntry {
   user_id: string;

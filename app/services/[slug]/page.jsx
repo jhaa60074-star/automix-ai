@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
-import { servicesData } from '../../../data/services';
-import Button from '../../../components/Button';
+import { servicesData } from '@/data/services';
+import Button from '@/components/Button';
 import Link from 'next/link';
 
 export function generateStaticParams() {

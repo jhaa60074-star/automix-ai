@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { helpData } from '../../data/help';
-import Button from '../../components/Button';
+import { helpData } from '@/data/help';
+import Button from '@/components/Button';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

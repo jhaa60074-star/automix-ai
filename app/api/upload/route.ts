@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '../../../utils/supabase/server';
-import { FileParser } from '../../../lib/files/parser';
-import { AutomationHooks } from '../../../lib/automation/hooks';
+import { createClient } from '@/utils/supabase/server';
+import { FileParser } from '@/lib/files/parser';
+import { AutomationHooks } from '@/lib/automation/hooks';
 
 export async function POST(req: NextRequest) {
   try {

@@ -1,9 +1,9 @@
 import './globals.css';
 
 import React, { Suspense } from 'react';
-import Header from '../components/Header';
-import FooterWrapper from '../components/FooterWrapper';
-import FloatingChat from '../components/FloatingChat';
+import Header from '@/components/Header';
+import FooterWrapper from '@/components/FooterWrapper';
+import FloatingChat from '@/components/FloatingChat';
 
 export const metadata = {
   title: 'AutrixGPT - AI SaaS Platform',

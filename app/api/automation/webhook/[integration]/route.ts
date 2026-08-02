@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { WebhookParser } from '../../../../../lib/automation/webhooks';
-import { AutomationEngine } from '../../../../../lib/automation/engine';
-import { AutomationQueue } from '../../../../../lib/automation/queue';
+import { WebhookParser } from '@/lib/automation/webhooks';
+import { AutomationEngine } from '@/lib/automation/engine';
+import { AutomationQueue } from '@/lib/automation/queue';
 
 export async function POST(req: NextRequest, { params }: { params: { integration: string } }) {
   try {

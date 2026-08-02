@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import Button from '../../components/Button';
+import Button from '@/components/Button';
 
 export default function ContactPage() {
   const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');

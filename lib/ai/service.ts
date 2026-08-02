@@ -1,6 +1,6 @@
-import { AIRouter } from './router';
-import { MemoryService } from './memory';
-import { PromptTemplates } from './prompts';
+import { AIRouter } from '@/lib/ai/router';
+import { MemoryService } from '@/lib/memory/service';
+import { PromptTemplates } from '@/lib/ai/prompts';
 
 export class AIService {
   /**

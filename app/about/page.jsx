@@ -1,4 +1,4 @@
-import Button from '../../components/Button';
+import Button from '@/components/Button';
 
 export const metadata = {
   title: 'About Us | AutrixGPT',

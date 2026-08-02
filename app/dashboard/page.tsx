@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
-import { createClient } from '../../utils/supabase/server'
-import Button from '../../components/Button'
+import { createClient } from '@/utils/supabase/server'
+import Button from '@/components/Button'
 
 export const metadata = {
   title: 'Dashboard | AutrixGPT',

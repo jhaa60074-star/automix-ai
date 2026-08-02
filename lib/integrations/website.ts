@@ -1,4 +1,4 @@
-import { AIService } from '../ai/service';
+import { AIService } from '@/lib/ai/service';
 
 export class WebsiteIntegration {
   static async execute(payload: any) {

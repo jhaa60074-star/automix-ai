@@ -1,11 +1,11 @@
 import { redirect, notFound } from 'next/navigation';
-import { createClient } from '../../../../utils/supabase/server';
-import { automationsData } from '../../../../data/automations';
-import InstagramDashboard from '../../../../components/automations/dashboards/InstagramDashboard';
-import WhatsAppDashboard from '../../../../components/automations/dashboards/WhatsAppDashboard';
-import WebsiteDashboard from '../../../../components/automations/dashboards/WebsiteDashboard';
-import GmailDashboard from '../../../../components/automations/dashboards/GmailDashboard';
-import ShopifyDashboard from '../../../../components/automations/dashboards/ShopifyDashboard';
+import { createClient } from '@/utils/supabase/server';
+import { automationsData } from '@/data/automations';
+import InstagramDashboard from '@/components/automations/dashboards/InstagramDashboard';
+import WhatsAppDashboard from '@/components/automations/dashboards/WhatsAppDashboard';
+import WebsiteDashboard from '@/components/automations/dashboards/WebsiteDashboard';
+import GmailDashboard from '@/components/automations/dashboards/GmailDashboard';
+import ShopifyDashboard from '@/components/automations/dashboards/ShopifyDashboard';
 
 export default async function DashboardAutomationPage({ params }: { params: { slug: string } }) {
   const supabase = createClient();

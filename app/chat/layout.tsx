@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import ChatSidebar from '../../components/chat/ChatSidebar';
+import ChatSidebar from '@/components/chat/ChatSidebar';
 import { usePathname } from 'next/navigation';
 
 export default function ChatLayout({ children }: { children: React.ReactNode }) {
