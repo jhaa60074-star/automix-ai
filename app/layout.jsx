@@ -8,10 +8,10 @@ import FloatingChat from '@/components/FloatingChat';
 export const metadata = {
   metadataBase: new URL('https://www.autrixgpt.com'),
   title: {
-    default: 'AutrixGPT | The Intelligent Automation Engine For Your Business',
-    template: '%s | AutrixGPT'
+    default: 'AUTRIXGPT AI',
+    template: '%s | AUTRIXGPT AI'
   },
-  description: 'Seamlessly chat with an AI assistant, analyze complex files, research data, and deploy automated workflows across Instagram, WhatsApp, Gmail, and more.',
+  description: 'AI automation platform for businesses',
   keywords: ['AI Automation', 'Business Automation', 'Instagram Automation', 'WhatsApp AI', 'File Analysis AI', 'AutrixGPT'],
   authors: [{ name: 'AutrixGPT' }],
   creator: 'AutrixGPT',

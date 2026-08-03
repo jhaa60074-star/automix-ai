@@ -32,7 +32,7 @@ export default function Home() {
                   <strong>User:</strong> Can you analyze the Q3 sales report and send a summary to my Slack?
                 </div>
                 <div style={{ background: 'var(--primary-color)', color: 'white', padding: '1rem', borderRadius: '8px', maxWidth: '80%', marginLeft: 'auto' }}>
-                  <strong>AutrixGPT AI:</strong> I've analyzed the report. Sales are up 14%. I have prepared the summary. Shall I send it to the #executive channel?
+                  <strong>AUTRIXGPT AI:</strong> I've analyzed the report. Sales are up 14%. I have prepared the summary. Shall I send it to the #executive channel?
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function Home() {
           <div className="section-header">
             <h2 className="section-title">Everything you need to automate</h2>
             <p className="section-subtitle">
-              From deep research and file analysis to cross-platform business automations, AutrixGPT connects the dots.
+              From deep research and file analysis to cross-platform business automations, AUTRIXGPT AI connects the dots.
             </p>
           </div>
           
@@ -101,7 +101,7 @@ export default function Home() {
             <div className="feature-content">
               <h2 className="section-title">Your Conversational Co-pilot</h2>
               <p className="section-subtitle" style={{ margin: '0 0 2rem 0' }}>
-                Chat naturally with your data. The AutrixGPT AI Assistant supports PDF, Excel, CSV, DOCX, and Image uploads. Ask questions, analyze complex data, perform deep research, and generate reports.
+                Chat naturally with your data. The AUTRIXGPT AI Assistant supports PDF, Excel, CSV, DOCX, and Image uploads. Ask questions, analyze complex data, perform deep research, and generate reports.
               </p>
               <ul style={{ listStyleType: 'none', marginBottom: '2rem' }}>
                 <li style={{ marginBottom: '0.5rem', display: 'flex', gap: '0.5rem' }}><span>✓</span> PDF & Excel Export</li>
@@ -126,7 +126,7 @@ export default function Home() {
             <div className="feature-content">
               <h2 className="section-title">Turn raw files into actionable insights</h2>
               <p className="section-subtitle" style={{ margin: '0 0 2rem 0' }}>
-                Upload your files and let AutrixGPT read, analyze, and interpret them. You just ask the questions, and the AI generates the results.
+                Upload your files and let AUTRIXGPT AI read, analyze, and interpret them. You just ask the questions, and the AI generates the results.
               </p>
               <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem' }}>
                 <span style={{ padding: '0.5rem 1rem', background: 'var(--background-secondary)', borderRadius: '4px' }}>PDF</span>
@@ -157,7 +157,7 @@ export default function Home() {
           <span style={{ display: 'inline-block', padding: '0.25rem 0.75rem', background: 'rgba(37, 99, 235, 0.1)', color: 'var(--primary-color)', borderRadius: '9999px', fontSize: '0.875rem', fontWeight: '600', marginBottom: '1rem' }}>Coming Soon</span>
           <h2 className="section-title">Connect your Website directly</h2>
           <p className="section-subtitle" style={{ marginBottom: '2rem' }}>
-            Soon you will be able to securely connect your website's data source directly to AutrixGPT. The AI will understand your live data and execute automated actions instantly.
+            Soon you will be able to securely connect your website's data source directly to AUTRIXGPT AI. The AI will understand your live data and execute automated actions instantly.
           </p>
           <Button href="/services/website-connection" variant="secondary">Learn About Website Connection</Button>
         </div>
@@ -169,7 +169,7 @@ export default function Home() {
           <div className="section-header">
             <h2 className="section-title">Powerful Automations</h2>
             <p className="section-subtitle">
-              Connect your favorite platforms and let AutrixGPT handle the repetitive tasks.
+              Connect your favorite platforms and let AUTRIXGPT AI handle the repetitive tasks.
             </p>
           </div>
 

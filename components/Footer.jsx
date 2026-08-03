@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container footer-container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <span className="text-gradient" style={{ fontWeight: '700', fontSize: '1.5rem', display: 'block', marginBottom: '1rem' }}>AUTRIXGPT</span>
+            <span className="text-gradient" style={{ fontWeight: '700', fontSize: '1.5rem', display: 'block', marginBottom: '1rem' }}>AUTRIXGPT AI</span>
             <p style={{ color: 'var(--text-muted)' }}>The complete premium AI SaaS platform for business automation and research.</p>
           </div>
           
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} AutrixGPT. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} AUTRIXGPT AI. All rights reserved.</p>
         </div>
       </div>
     </footer>
