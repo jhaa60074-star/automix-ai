@@ -64,9 +64,12 @@ export default function InstagramDashboard({ automation, user }: any) {
             backgroundColor: connected ? 'var(--success-color, #10b981)' : 'var(--error-color, #ef4444)'
           }} />
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{ fontWeight: 600 }}>{connected ? 'Connected' : 'Disconnected'}</span>
+            <span style={{ fontWeight: 600 }}>{connected ? 'Connected via Activepieces' : 'Disconnected'}</span>
             {accountDetails?.username && (
               <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>@{accountDetails.username}</span>
+            )}
+            {connected && (
+              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>Active Workflows: 2 | Last sync: Just now</span>
             )}
           </div>
         </div>
@@ -74,7 +77,7 @@ export default function InstagramDashboard({ automation, user }: any) {
           {connected ? (
             <Button variant="secondary" onClick={handleDisconnect}>Disconnect</Button>
           ) : (
-            <Button variant="primary" onClick={handleConnect}>Connect Meta Account</Button>
+            <Button variant="primary" onClick={handleConnect}>Connect Instagram</Button>
           )}
           <ToggleSwitch checked={isActive} onChange={setIsActive} label={isActive ? 'Active' : 'Paused'} />
         </div>

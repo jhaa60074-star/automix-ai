@@ -1,6 +1,7 @@
 import { AutomationQueue, AutomationTask } from '@/lib/automation/queue';
 import { AutomationLogs } from '@/lib/automation/logs';
 import { AutomationAnalytics } from '@/lib/automation/analytics';
+import { ActivepiecesExecution } from '@/lib/integrations/activepieces/execution';
 
 export class AutomationEngine {
   /**
@@ -10,9 +11,8 @@ export class AutomationEngine {
     try {
       console.log(`[Engine] Processing task for ${task.integration} instantly...`);
       
-      // In the future, this will dynamically call the respective Integration class
-      // const integrationHandler = AutomationRouter.getHandler(task.integration);
-      // await integrationHandler.execute(task.payload);
+      // Route the execution through the Activepieces integration layer
+      await ActivepiecesExecution.runWorkflowAsynchronous(task.workflow_id, task.payload);
 
       await AutomationLogs.record({
         user_id: task.user_id,

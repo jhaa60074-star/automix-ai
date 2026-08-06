@@ -18,11 +18,16 @@ export default function WebsiteDashboard({ automation, user }: any) {
             width: 12, height: 12, borderRadius: '50%',
             backgroundColor: connected ? 'var(--success-color, #10b981)' : 'var(--error-color, #ef4444)'
           }} />
-          <span style={{ fontWeight: 600 }}>{connected ? 'Widget Active on example.com' : 'Disconnected'}</span>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ fontWeight: 600 }}>{connected ? 'Widget Active on example.com (via Activepieces)' : 'Disconnected'}</span>
+            {connected && (
+              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>Active Workflows: 2 | Last sync: Just now</span>
+            )}
+          </div>
         </div>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
           <Button variant="secondary" onClick={() => setConnected(!connected)}>
-            {connected ? 'Re-generate Script' : 'Connect Website'}
+            {connected ? 'Disconnect' : 'Connect Website'}
           </Button>
           <ToggleSwitch checked={isActive} onChange={setIsActive} label={isActive ? 'Active' : 'Paused'} />
         </div>

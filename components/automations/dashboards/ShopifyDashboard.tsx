@@ -18,11 +18,16 @@ export default function ShopifyDashboard({ automation, user }: any) {
             width: 12, height: 12, borderRadius: '50%',
             backgroundColor: connected ? 'var(--success-color, #10b981)' : 'var(--error-color, #ef4444)'
           }} />
-          <span style={{ fontWeight: 600 }}>{connected ? 'Connected to store.myshopify.com' : 'Disconnected'}</span>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ fontWeight: 600 }}>{connected ? 'Connected to store.myshopify.com (via Activepieces)' : 'Disconnected'}</span>
+            {connected && (
+              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>Active Workflows: 4 | Last sync: Just now</span>
+            )}
+          </div>
         </div>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
           <Button variant={connected ? 'secondary' : 'primary'} onClick={() => setConnected(!connected)}>
-            {connected ? 'Manage App' : 'Connect Shopify'}
+            {connected ? 'Disconnect' : 'Connect Shopify'}
           </Button>
           <ToggleSwitch checked={isActive} onChange={setIsActive} label={isActive ? 'Active' : 'Paused'} />
         </div>

@@ -1,5 +1,5 @@
 /**
- * Internal automation hooks that can trigger workflows (e.g. n8n).
+ * Internal automation hooks that can trigger workflows (e.g. Activepieces).
  */
 import { AutomationQueue } from '@/lib/automation/queue';
 import { AutomationEngine } from '@/lib/automation/engine';
