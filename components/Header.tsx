@@ -9,6 +9,7 @@ import { createClient } from '@/utils/supabase/client';
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [user, setUser] = useState<any>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
   const router = useRouter();
   const supabase = createClient();
 
@@ -16,6 +17,11 @@ export default function Header() {
     const fetchUser = async () => {
       const { data: { session } } = await supabase.auth.getSession();
       setUser(session?.user || null);
+
+      if (session?.user) {
+        const { data } = await supabase.from('profiles').select('role').eq('id', session.user.id).single();
+        setIsAdmin(data?.role === 'admin');
+      }
     };
 
     fetchUser();
@@ -23,6 +29,7 @@ export default function Header() {
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       (_event, session) => {
         setUser(session?.user || null);
+        if (!session?.user) setIsAdmin(false);
       }
     );
 
@@ -70,6 +77,7 @@ export default function Header() {
           
           {user ? (
             <>
+              {isAdmin && <Link href="/admin" className="nav-link" style={{ marginLeft: '1rem', color: 'var(--primary-color)' }}>Admin</Link>}
               <Link href="/dashboard" className="nav-link" style={{ marginLeft: '1rem' }}>Dashboard</Link>
               <button onClick={handleLogout} className="btn btn-secondary" style={{ padding: '0.5rem 1rem' }}>Log Out</button>
             </>
@@ -104,7 +112,8 @@ export default function Header() {
             <ThemeToggle />
             {user ? (
               <>
-                <Link href="/dashboard" className="nav-mobile-link" onClick={toggleMobileMenu} style={{ marginTop: '1rem' }}>Dashboard</Link>
+                {isAdmin && <Link href="/admin" className="nav-mobile-link" onClick={toggleMobileMenu} style={{ marginTop: '1rem', color: 'var(--primary-color)' }}>Admin Panel</Link>}
+                <Link href="/dashboard" className="nav-mobile-link" onClick={toggleMobileMenu} style={{ marginTop: isAdmin ? '0' : '1rem' }}>Dashboard</Link>
                 <button onClick={() => { handleLogout(); toggleMobileMenu(); }} className="btn btn-secondary" style={{ width: '100%', marginTop: '0.5rem' }}>Log Out</button>
               </>
             ) : (
