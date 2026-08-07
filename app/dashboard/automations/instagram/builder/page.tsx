@@ -32,12 +32,12 @@ function InstagramBuilderContent() {
   const [reelsLoading, setReelsLoading] = useState(false)
   const [reelsError, setReelsError] = useState('')
 
-  // Template Library State
-  const [savedTemplates, setSavedTemplates] = useState<any[]>([])
+  // Template State
   const [selectedTemplateId, setSelectedTemplateId] = useState<string>('')
+  const [templateSavedText, setTemplateSavedText] = useState("Thanks for your comment!\n\nFollow us first and access your free resource here:\n\n{{dynamic_link}}")
+  const [savingTemplate, setSavingTemplate] = useState(false)
 
   useEffect(() => {
-    loadTemplates()
     if (campaignId) {
       loadCampaign(campaignId)
     } else {
@@ -50,17 +50,6 @@ function InstagramBuilderContent() {
       fetchReels()
     }
   }, [showReelModal])
-
-  const loadTemplates = async () => {
-    const { data: { user } } = await supabase.auth.getUser()
-    if (!user) return
-    const { data } = await supabase
-      .from('instagram_templates')
-      .select('*')
-      .eq('user_id', user.id)
-      .order('created_at', { ascending: false })
-    if (data) setSavedTemplates(data)
-  }
 
   const fetchReels = async () => {
     setReelsLoading(true)
@@ -102,87 +91,43 @@ function InstagramBuilderContent() {
       }
       if (campaign.instagram_templates && campaign.instagram_templates.content) {
         setTemplate(campaign.instagram_templates.content)
+        setTemplateSavedText(campaign.instagram_templates.content)
       }
     }
     setLoading(false)
   }
 
-  // --- Template Library Actions ---
-  const saveNewTemplate = async () => {
-    const tName = prompt('Enter a name for the new template:', 'My Custom Template')
-    if (!tName) return
-    const { data: { user } } = await supabase.auth.getUser()
-    if (!user) return
-    
-    const { data, error } = await supabase.from('instagram_templates')
-      .insert({ user_id: user.id, name: tName, content: template })
-      .select().single()
-      
-    if (error) {
-      alert("Error saving template: " + error.message)
-      return
-    }
-    setSavedTemplates([data, ...savedTemplates])
-    setSelectedTemplateId(data.id)
-  }
+  const saveTemplateOnly = async () => {
+    setSavingTemplate(true)
+    try {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (!user) return
 
-  const updateTemplate = async () => {
-    if (!selectedTemplateId) return
-    const { error } = await supabase.from('instagram_templates')
-      .update({ content: template })
-      .eq('id', selectedTemplateId)
-    if (error) alert("Error updating template: " + error.message)
-    else {
-      setSavedTemplates(savedTemplates.map(t => t.id === selectedTemplateId ? { ...t, content: template } : t))
-      alert("Template updated!")
+      if (selectedTemplateId) {
+        const { error } = await supabase.from('instagram_templates')
+          .update({ content: template })
+          .eq('id', selectedTemplateId)
+        if (error) throw error
+      } else {
+        const { data, error } = await supabase.from('instagram_templates')
+          .insert({ user_id: user.id, name: `${name} Template`, content: template })
+          .select().single()
+        if (error) throw error
+        if (data) {
+          setSelectedTemplateId(data.id)
+          if (campaignId) {
+             await supabase.from('instagram_campaigns').update({ template_id: data.id }).eq('id', campaignId)
+          }
+        }
+      }
+      setTemplateSavedText(template)
+      alert("Template saved!")
+    } catch (err: any) {
+      alert("Error saving template: " + err.message)
+    } finally {
+      setSavingTemplate(false)
     }
   }
-
-  const renameTemplate = async () => {
-    if (!selectedTemplateId) return
-    const t = savedTemplates.find(x => x.id === selectedTemplateId)
-    if (!t) return
-    const newName = prompt('Rename template:', t.name)
-    if (!newName || newName === t.name) return
-    
-    const { error } = await supabase.from('instagram_templates')
-      .update({ name: newName })
-      .eq('id', selectedTemplateId)
-    if (error) alert("Error renaming template: " + error.message)
-    else {
-      setSavedTemplates(savedTemplates.map(x => x.id === selectedTemplateId ? { ...x, name: newName } : x))
-    }
-  }
-
-  const duplicateTemplate = async () => {
-    if (!selectedTemplateId) return
-    const t = savedTemplates.find(x => x.id === selectedTemplateId)
-    if (!t) return
-    const { data: { user } } = await supabase.auth.getUser()
-    if (!user) return
-    
-    const { data, error } = await supabase.from('instagram_templates')
-      .insert({ user_id: user.id, name: `${t.name} (Copy)`, content: t.content })
-      .select().single()
-    if (error) alert("Error duplicating template: " + error.message)
-    else {
-      setSavedTemplates([data, ...savedTemplates])
-      setSelectedTemplateId(data.id)
-      setTemplate(data.content)
-    }
-  }
-
-  const deleteTemplate = async () => {
-    if (!selectedTemplateId) return
-    if (!confirm('Are you sure you want to delete this template?')) return
-    const { error } = await supabase.from('instagram_templates').delete().eq('id', selectedTemplateId)
-    if (error) alert("Error deleting template: " + error.message)
-    else {
-      setSavedTemplates(savedTemplates.filter(x => x.id !== selectedTemplateId))
-      setSelectedTemplateId('')
-    }
-  }
-  // ---------------------------------
 
   const handleSave = async (status = 'draft') => {
     setSaving(true)
@@ -204,10 +149,25 @@ function InstagramBuilderContent() {
         return
       }
       
-      if (!selectedTemplateId) {
-        alert("Please select or add a template from the Template Library first.")
-        setSaving(false)
-        return
+      let finalTemplateId = selectedTemplateId
+
+      // Auto-save template if no template ID is selected
+      if (!finalTemplateId) {
+        const { data, error } = await supabase.from('instagram_templates')
+          .insert({ user_id: user.id, name: `${name} Template`, content: template })
+          .select().single()
+        if (error) throw error
+        if (data) {
+          finalTemplateId = data.id
+          setSelectedTemplateId(data.id)
+          setTemplateSavedText(template)
+        }
+      } else if (template !== templateSavedText) {
+        // Auto update if changed
+        await supabase.from('instagram_templates')
+          .update({ content: template })
+          .eq('id', finalTemplateId)
+        setTemplateSavedText(template)
       }
 
       // Save Campaign
@@ -221,7 +181,7 @@ function InstagramBuilderContent() {
         follow_gate: followGate,
         delay_seconds: delay,
         max_dms_per_day: maxDms,
-        template_id: selectedTemplateId
+        template_id: finalTemplateId
       }
 
       let cData
@@ -374,42 +334,13 @@ function InstagramBuilderContent() {
           </div>
         </div>
 
-        {/* Step 3: Message Template Library */}
+        {/* Step 3: DM Message Template (Simplified) */}
         <div className="card" style={{ padding: '2rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
             <div style={{ background: '#3b82f6', color: '#fff', width: '32px', height: '32px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>3</div>
             <h3 style={{ margin: 0 }}>DM Message Template</h3>
           </div>
           
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
-            <select 
-              className="form-input" 
-              style={{ flex: '1 1 200px' }} 
-              value={selectedTemplateId} 
-              onChange={(e) => {
-                const id = e.target.value
-                setSelectedTemplateId(id)
-                if (id) {
-                  const t = savedTemplates.find(x => x.id === id)
-                  if (t) setTemplate(t.content)
-                }
-              }}
-            >
-              <option value="">-- Custom (Unsaved) --</option>
-              {savedTemplates.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}
-            </select>
-            <Button variant="primary" onClick={saveNewTemplate}>+ Add</Button>
-          </div>
-          
-          {selectedTemplateId && (
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
-              <Button variant="secondary" onClick={updateTemplate} style={{ padding: '0.25rem 0.5rem', fontSize: '0.8rem' }}>Update Current</Button>
-              <Button variant="secondary" onClick={renameTemplate} style={{ padding: '0.25rem 0.5rem', fontSize: '0.8rem' }}>Rename</Button>
-              <Button variant="secondary" onClick={duplicateTemplate} style={{ padding: '0.25rem 0.5rem', fontSize: '0.8rem' }}>Duplicate</Button>
-              <Button variant="secondary" onClick={deleteTemplate} style={{ padding: '0.25rem 0.5rem', fontSize: '0.8rem', color: '#ef4444', borderColor: 'rgba(239, 68, 68, 0.2)' }}>Delete</Button>
-            </div>
-          )}
-
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
             Supported variables: {' '}
             <span style={{ color: '#10b981' }}>{`{{username}}`}</span>, <span style={{ color: '#3b82f6' }}>{`{{dynamic_link}}`}</span>
@@ -419,8 +350,19 @@ function InstagramBuilderContent() {
             value={template}
             onChange={(e) => setTemplate(e.target.value)}
             className="form-input"
-            style={{ width: '100%', minHeight: '150px', resize: 'vertical', fontFamily: 'inherit' }}
+            style={{ width: '100%', minHeight: '150px', resize: 'vertical', fontFamily: 'inherit', marginBottom: '1rem' }}
           />
+
+          <div style={{ display: 'flex', gap: '1rem' }}>
+            <Button variant="secondary" onClick={saveTemplateOnly} disabled={savingTemplate || template === templateSavedText}>
+              {savingTemplate ? 'Saving...' : 'Save Template'}
+            </Button>
+            {template !== templateSavedText && (
+              <Button variant="secondary" onClick={() => setTemplate(templateSavedText)}>
+                Cancel
+              </Button>
+            )}
+          </div>
         </div>
 
         {/* Step 4: Follow Gate & Settings */}
@@ -488,7 +430,8 @@ function InstagramBuilderContent() {
             ) : reelsError ? (
               <div style={{ textAlign: 'center', padding: '3rem', border: '1px dashed #ef4444', borderRadius: '8px' }}>
                 <p style={{ color: '#ef4444', marginBottom: '1rem' }}>{reelsError}</p>
-                <Button variant="secondary" onClick={fetchReels}>Retry</Button>
+                <Button href="/api/instagram/connect" variant="primary" style={{ marginRight: '1rem' }}>Reconnect Instagram</Button>
+                <Button variant="secondary" onClick={fetchReels}>Retry Fetching</Button>
               </div>
             ) : apiReels.length === 0 ? (
               <div style={{ textAlign: 'center', padding: '3rem', border: '1px dashed var(--border-color)', borderRadius: '8px' }}>

@@ -1,43 +1,36 @@
-# Instagram Automation Builder - Production Fix Report
+# Instagram Automation Builder - Production OAuth & UI Report
 
 ## 🚀 Overview
-The Instagram Automation Builder has been successfully updated with real production functionality. We have completely replaced the mocked Reel selector with a live Graph API connection and implemented a persistent, reusable DM Message Template Library.
+We have completely replaced the mock Instagram connection flow with a robust, production-grade Meta OAuth 2.0 system. Simultaneously, the DM Message Template UI in the Builder has been simplified to drastically improve the user experience for non-technical users.
 
-## 📁 Files Created
+## 🔑 Production OAuth Flow
 
-1. **`app/api/instagram/reels/route.ts`**
-   - New backend endpoint.
-   - Securely fetches the connected Instagram account details and access tokens from Supabase.
-   - Calls the real Meta Graph API (`https://graph.facebook.com/v20.0/`) to retrieve authentic media.
-   - Safely filters for `media_type === 'VIDEO'` (Reels).
-   - Features robust error handling, returning a graceful 400 error message (never crashing with a 500 error) if tokens are expired or missing, allowing the frontend to display a user-friendly retry prompt.
+1. **`app/api/instagram/connect/route.ts`**
+   - Redirects users directly to the authentic Meta/Facebook OAuth portal requesting proper scopes (`instagram_manage_comments`, `pages_manage_metadata`, etc.).
 
-## 📝 Files Modified
+2. **`app/api/instagram/callback/route.ts`**
+   - Receives the Meta authorization code and executes a secure two-step token exchange.
+   - Exchanges the short-lived token for a **60-day long-lived access token**.
+   - Identifies the connected Facebook Page and its associated Instagram Business Account automatically.
+   - Upserts this critical integration data securely into the `instagram_connected_accounts` table.
+
+3. **`app/api/instagram/refresh/route.ts`**
+   - New automated endpoint capable of silently exchanging expiring long-lived tokens for fresh ones, ensuring campaigns never unexpectedly drop offline due to token expiration.
+
+## 🎨 UI Simplification (DM Message Template)
 
 1. **`app/dashboard/automations/instagram/builder/page.tsx`**
-   - **Real Reel Fetching Integrated**: Connected the Reel Selector modal directly to the new API endpoint. Built out empty states, loading indicators, and retry functionality to handle API failures gracefully.
-   - **Template Library Implemented**: Upgraded the DM message section from a simple text area to a full Template Library. Users can now:
-     - **Add New**: Create entirely new, reusable templates.
-     - **Update Current**: Save modifications to an existing template.
-     - **Rename**: Change the title of the template.
-     - **Duplicate**: Clone a successful template to alter it slightly.
-     - **Delete**: Remove obsolete templates securely from Supabase.
-     - Select from a dropdown menu preserving their entire library.
+   - **Removed Complexity:** Stripped out the confusing Template Library system (dropdowns, rename prompts, duplication logic, and explicit deletion flows).
+   - **Simple Editor:** Replaced with a straightforward, large text area.
+   - **Intuitive Saving:** Added simple `Save Template` and `Cancel` (revert) buttons.
+   - **Campaign Integration:** Templates now elegantly auto-save or explicitly save on a 1-to-1 relationship with the active campaign, ensuring zero confusion while maintaining backend `template_id` relational integrity.
 
-## 🗄️ Supabase Interactions
-The existing schema was leveraged effectively without structural modifications:
-- Templates now perform full CRUD operations directly against the `instagram_templates` table.
-- Selected template associations correctly save the `template_id` into `instagram_campaigns` ensuring campaigns load precisely as saved.
+## 📱 Mobile Verification
+- Validated on breakpoints `320px` to `430px`.
+- The simplified Template Editor fits perfectly on small screens without requiring horizontal scroll.
+- The `Save Template` and `Cancel` buttons flex gracefully in a row without overlapping the text area.
 
-## 📱 Mobile & UI Verification
-- Validated CSS Grid and Flexbox rules for complete responsiveness.
-- Tested small viewports (`320px` - `430px`) for zero horizontal overflow.
-- Template library action buttons collapse and wrap beautifully via `flexWrap: 'wrap'` and `flex: 1 1 200px`.
-- Modals restrict `max-width` effectively preventing oversized screen stretching.
-
-## 🛠️ Build & Deployment Readiness
-- Replaced the hardcoded Netflix/Unsplash placeholder mock images.
-- Validated all Next.js 14 App Router standards. The component remains properly wrapped in its `<Suspense>` boundary from the previous deployment fix.
-- No TypeScript warnings, missing imports, or missing dependencies were introduced.
-
-The AUTRIXGPT Builder is fully stabilized, robust against API failures, and strictly compliant with production deployment requirements.
+## 🛠️ Deployment Readiness Check
+- Required environment variables (`NEXT_PUBLIC_META_CLIENT_ID`, `META_CLIENT_SECRET`, `NEXT_PUBLIC_APP_URL`) have been established for the system.
+- Code is fully TypeScript-compliant, successfully passing Next.js 14 linting.
+- The platform remains completely stable, with zero regressions to Activepieces, Supabase, or existing dashboards.
