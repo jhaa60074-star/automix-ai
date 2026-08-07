@@ -1,7 +1,9 @@
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
 
-export async function POST(request: Request) {
+export const dynamic = 'force-dynamic'
+
+async function handleRequest(request: Request) {
   const supabase = createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
@@ -25,4 +27,12 @@ export async function POST(request: Request) {
   const oauthUrl = `https://www.facebook.com/v20.0/dialog/oauth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scope)}&response_type=code&state=${state}`
 
   return redirect(oauthUrl)
+}
+
+export async function GET(request: Request) {
+  return handleRequest(request)
+}
+
+export async function POST(request: Request) {
+  return handleRequest(request)
 }

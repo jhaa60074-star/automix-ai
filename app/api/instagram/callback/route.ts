@@ -1,7 +1,9 @@
 import { createClient } from '@/utils/supabase/server'
 import { NextResponse } from 'next/server'
 
-export async function GET(request: Request) {
+export const dynamic = 'force-dynamic'
+
+async function handleRequest(request: Request) {
   const { searchParams } = new URL(request.url)
   const code = searchParams.get('code')
   const state = searchParams.get('state') // user_id passed from connect route
@@ -105,6 +107,7 @@ export async function GET(request: Request) {
         access_token: longLivedToken, // Encrypt this in a real prod environment if desired via Postgres extensions
         status: 'connected',
         last_sync: new Date().toISOString(),
+        expires_at: expiresAt.toISOString(),
         updated_at: new Date().toISOString()
       }, { onConflict: 'user_id' }) // Assuming one account per user for simplicity, or adjust schema if unique
 
@@ -119,4 +122,12 @@ export async function GET(request: Request) {
     console.error('OAuth Callback Error:', error)
     return NextResponse.redirect(`${redirectUri}?error=internal_error`)
   }
+}
+
+export async function GET(request: Request) {
+  return handleRequest(request)
+}
+
+export async function POST(request: Request) {
+  return handleRequest(request)
 }

@@ -1,6 +1,8 @@
 import { createClient } from '@/utils/supabase/server'
 import { NextResponse } from 'next/server'
 
+export const dynamic = 'force-dynamic'
+
 // This endpoint can be hit via a CRON job or manually to refresh tokens
 export async function GET(request: Request) {
   const supabase = createClient()
