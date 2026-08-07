@@ -20,7 +20,7 @@ export async function GET(request: Request) {
       .limit(1)
 
     if (accountError || !accounts || accounts.length === 0) {
-      return NextResponse.json({ error: 'No Instagram account connected' }, { status: 404 })
+      return NextResponse.json({ error: 'No Instagram account connected' }, { status: 401 })
     }
 
     const { instagram_user_id, access_token } = accounts[0]
@@ -84,7 +84,7 @@ export async function GET(request: Request) {
             message: 'Failed to fetch reels from Instagram. The access token may have expired and refresh failed. Please reconnect.',
             details: finalErrorData
           }, 
-          { status: 400 }
+          { status: 401 }
         )
       }
     }

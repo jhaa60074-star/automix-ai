@@ -11,7 +11,7 @@ async function handleRequest(request: Request) {
   const errorReason = searchParams.get('error_reason')
 
   const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
-  const redirectUri = `${appUrl}/dashboard/automations/instagram`
+  const redirectUri = `${appUrl}/dashboard/automations/instagram/builder?autoReel=true`
 
   if (error) {
     console.error('OAuth Error from Meta:', error, errorReason)

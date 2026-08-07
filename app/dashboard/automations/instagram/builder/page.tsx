@@ -43,7 +43,18 @@ function InstagramBuilderContent() {
     } else {
       setLoading(false)
     }
-  }, [campaignId])
+    
+    // Automatically open reel selector if redirected from successful OAuth
+    if (searchParams.get('autoReel') === 'true') {
+      setShowReelModal(true)
+      // Optionally clean up the URL without triggering a reload
+      if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        url.searchParams.delete('autoReel')
+        window.history.replaceState({}, '', url.toString())
+      }
+    }
+  }, [campaignId, searchParams])
 
   useEffect(() => {
     if (showReelModal && apiReels.length === 0 && !reelsError) {
@@ -58,6 +69,10 @@ function InstagramBuilderContent() {
       const res = await fetch('/api/instagram/reels')
       const data = await res.json()
       if (!res.ok) {
+        if (res.status === 401) {
+          window.location.href = '/api/instagram/connect'
+          return
+        }
         throw new Error(data.message || data.error || 'Failed to fetch reels')
       }
       setApiReels(data.reels || [])
