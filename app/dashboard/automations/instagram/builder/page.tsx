@@ -27,15 +27,17 @@ function InstagramBuilderContent() {
   const [showReelModal, setShowReelModal] = useState(false)
   const [newKeyword, setNewKeyword] = useState('')
   
-  // Mock Reels for selector
-  const mockReels = [
-    { id: '1', thumbnail: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&q=80', caption: 'Launch announcement 🚀', date: '2026-08-01' },
-    { id: '2', thumbnail: 'https://images.unsplash.com/photo-1616469829581-73993eb86b02?w=500&q=80', caption: '5 tips for automation 🤖', date: '2026-08-05' },
-    { id: '3', thumbnail: 'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&q=80', caption: 'Behind the scenes workspace 💻', date: '2026-08-07' },
-  ]
+  // Reel Fetching State
+  const [apiReels, setApiReels] = useState<any[]>([])
+  const [reelsLoading, setReelsLoading] = useState(false)
+  const [reelsError, setReelsError] = useState('')
+
+  // Template Library State
+  const [savedTemplates, setSavedTemplates] = useState<any[]>([])
+  const [selectedTemplateId, setSelectedTemplateId] = useState<string>('')
 
   useEffect(() => {
-    // If editing, load campaign
+    loadTemplates()
     if (campaignId) {
       loadCampaign(campaignId)
     } else {
@@ -43,11 +45,45 @@ function InstagramBuilderContent() {
     }
   }, [campaignId])
 
+  useEffect(() => {
+    if (showReelModal && apiReels.length === 0 && !reelsError) {
+      fetchReels()
+    }
+  }, [showReelModal])
+
+  const loadTemplates = async () => {
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) return
+    const { data } = await supabase
+      .from('instagram_templates')
+      .select('*')
+      .eq('user_id', user.id)
+      .order('created_at', { ascending: false })
+    if (data) setSavedTemplates(data)
+  }
+
+  const fetchReels = async () => {
+    setReelsLoading(true)
+    setReelsError('')
+    try {
+      const res = await fetch('/api/instagram/reels')
+      const data = await res.json()
+      if (!res.ok) {
+        throw new Error(data.message || data.error || 'Failed to fetch reels')
+      }
+      setApiReels(data.reels || [])
+    } catch (err: any) {
+      setReelsError(err.message)
+    } finally {
+      setReelsLoading(false)
+    }
+  }
+
   const loadCampaign = async (id: string) => {
     setLoading(true)
     const { data: campaign } = await supabase
       .from('instagram_campaigns')
-      .select('*, instagram_keywords(keyword), instagram_templates(content)')
+      .select('*, instagram_keywords(keyword), instagram_templates(*)')
       .eq('id', id)
       .single()
       
@@ -61,12 +97,92 @@ function InstagramBuilderContent() {
       if (campaign.instagram_keywords && campaign.instagram_keywords.length > 0) {
         setKeywords(campaign.instagram_keywords.map((k: any) => k.keyword))
       }
+      if (campaign.template_id) {
+        setSelectedTemplateId(campaign.template_id)
+      }
       if (campaign.instagram_templates && campaign.instagram_templates.content) {
         setTemplate(campaign.instagram_templates.content)
       }
     }
     setLoading(false)
   }
+
+  // --- Template Library Actions ---
+  const saveNewTemplate = async () => {
+    const tName = prompt('Enter a name for the new template:', 'My Custom Template')
+    if (!tName) return
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) return
+    
+    const { data, error } = await supabase.from('instagram_templates')
+      .insert({ user_id: user.id, name: tName, content: template })
+      .select().single()
+      
+    if (error) {
+      alert("Error saving template: " + error.message)
+      return
+    }
+    setSavedTemplates([data, ...savedTemplates])
+    setSelectedTemplateId(data.id)
+  }
+
+  const updateTemplate = async () => {
+    if (!selectedTemplateId) return
+    const { error } = await supabase.from('instagram_templates')
+      .update({ content: template })
+      .eq('id', selectedTemplateId)
+    if (error) alert("Error updating template: " + error.message)
+    else {
+      setSavedTemplates(savedTemplates.map(t => t.id === selectedTemplateId ? { ...t, content: template } : t))
+      alert("Template updated!")
+    }
+  }
+
+  const renameTemplate = async () => {
+    if (!selectedTemplateId) return
+    const t = savedTemplates.find(x => x.id === selectedTemplateId)
+    if (!t) return
+    const newName = prompt('Rename template:', t.name)
+    if (!newName || newName === t.name) return
+    
+    const { error } = await supabase.from('instagram_templates')
+      .update({ name: newName })
+      .eq('id', selectedTemplateId)
+    if (error) alert("Error renaming template: " + error.message)
+    else {
+      setSavedTemplates(savedTemplates.map(x => x.id === selectedTemplateId ? { ...x, name: newName } : x))
+    }
+  }
+
+  const duplicateTemplate = async () => {
+    if (!selectedTemplateId) return
+    const t = savedTemplates.find(x => x.id === selectedTemplateId)
+    if (!t) return
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) return
+    
+    const { data, error } = await supabase.from('instagram_templates')
+      .insert({ user_id: user.id, name: `${t.name} (Copy)`, content: t.content })
+      .select().single()
+    if (error) alert("Error duplicating template: " + error.message)
+    else {
+      setSavedTemplates([data, ...savedTemplates])
+      setSelectedTemplateId(data.id)
+      setTemplate(data.content)
+    }
+  }
+
+  const deleteTemplate = async () => {
+    if (!selectedTemplateId) return
+    if (!confirm('Are you sure you want to delete this template?')) return
+    const { error } = await supabase.from('instagram_templates').delete().eq('id', selectedTemplateId)
+    if (error) alert("Error deleting template: " + error.message)
+    else {
+      setSavedTemplates(savedTemplates.filter(x => x.id !== selectedTemplateId))
+      setSelectedTemplateId('')
+    }
+  }
+  // ---------------------------------
 
   const handleSave = async (status = 'draft') => {
     setSaving(true)
@@ -87,15 +203,12 @@ function InstagramBuilderContent() {
         setSaving(false)
         return
       }
-
-      // Save Template
-      const { data: templateData, error: tError } = await supabase
-        .from('instagram_templates')
-        .insert({ user_id: user.id, name: `${name} Template`, content: template })
-        .select()
-        .single()
-        
-      if (tError) throw tError
+      
+      if (!selectedTemplateId) {
+        alert("Please select or add a template from the Template Library first.")
+        setSaving(false)
+        return
+      }
 
       // Save Campaign
       const campaignData = {
@@ -103,12 +216,12 @@ function InstagramBuilderContent() {
         instagram_account_id: accountId,
         name,
         reel_id: reel?.id,
-        reel_thumbnail: reel?.thumbnail,
+        reel_thumbnail: reel?.thumbnail_url || reel?.thumbnail,
         status,
         follow_gate: followGate,
         delay_seconds: delay,
         max_dms_per_day: maxDms,
-        template_id: templateData.id
+        template_id: selectedTemplateId
       }
 
       let cData
@@ -219,11 +332,11 @@ function InstagramBuilderContent() {
           ) : (
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', background: 'var(--background-secondary)', padding: '1rem', borderRadius: '8px' }}>
               <div style={{ width: '80px', height: '120px', borderRadius: '4px', overflow: 'hidden', background: '#000' }}>
-                <img src={reel.thumbnail} alt="Selected Reel" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={reel.thumbnail_url || reel.thumbnail} alt="Selected Reel" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
-              <div style={{ flex: 1 }}>
+              <div style={{ flex: 1, overflow: 'hidden' }}>
                 <p style={{ fontWeight: '500', marginBottom: '0.5rem' }}>Reel Selected</p>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>ID: {reel.id}</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>ID: {reel.id}</p>
                 <Button variant="secondary" onClick={() => setShowReelModal(true)} style={{ padding: '0.25rem 0.75rem', fontSize: '0.8rem' }}>Change Reel</Button>
               </div>
             </div>
@@ -261,12 +374,42 @@ function InstagramBuilderContent() {
           </div>
         </div>
 
-        {/* Step 3: Message Template */}
+        {/* Step 3: Message Template Library */}
         <div className="card" style={{ padding: '2rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
             <div style={{ background: '#3b82f6', color: '#fff', width: '32px', height: '32px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>3</div>
             <h3 style={{ margin: 0 }}>DM Message Template</h3>
           </div>
+          
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
+            <select 
+              className="form-input" 
+              style={{ flex: '1 1 200px' }} 
+              value={selectedTemplateId} 
+              onChange={(e) => {
+                const id = e.target.value
+                setSelectedTemplateId(id)
+                if (id) {
+                  const t = savedTemplates.find(x => x.id === id)
+                  if (t) setTemplate(t.content)
+                }
+              }}
+            >
+              <option value="">-- Custom (Unsaved) --</option>
+              {savedTemplates.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}
+            </select>
+            <Button variant="primary" onClick={saveNewTemplate}>+ Add</Button>
+          </div>
+          
+          {selectedTemplateId && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
+              <Button variant="secondary" onClick={updateTemplate} style={{ padding: '0.25rem 0.5rem', fontSize: '0.8rem' }}>Update Current</Button>
+              <Button variant="secondary" onClick={renameTemplate} style={{ padding: '0.25rem 0.5rem', fontSize: '0.8rem' }}>Rename</Button>
+              <Button variant="secondary" onClick={duplicateTemplate} style={{ padding: '0.25rem 0.5rem', fontSize: '0.8rem' }}>Duplicate</Button>
+              <Button variant="secondary" onClick={deleteTemplate} style={{ padding: '0.25rem 0.5rem', fontSize: '0.8rem', color: '#ef4444', borderColor: 'rgba(239, 68, 68, 0.2)' }}>Delete</Button>
+            </div>
+          )}
+
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
             Supported variables: {' '}
             <span style={{ color: '#10b981' }}>{`{{username}}`}</span>, <span style={{ color: '#3b82f6' }}>{`{{dynamic_link}}`}</span>
@@ -338,22 +481,38 @@ function InstagramBuilderContent() {
               <button onClick={() => setShowReelModal(false)} style={{ background: 'none', border: 'none', color: 'var(--text-primary)', fontSize: '1.5rem', cursor: 'pointer' }}>&times;</button>
             </div>
             
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '1rem' }}>
-              {mockReels.map(r => (
-                <div 
-                  key={r.id} 
-                  onClick={() => { setReel(r); setShowReelModal(false); }}
-                  style={{ cursor: 'pointer', borderRadius: '8px', overflow: 'hidden', border: reel?.id === r.id ? '2px solid #3b82f6' : '2px solid transparent', transition: 'all 0.2s' }}
-                >
-                  <div style={{ width: '100%', aspectRatio: '9/16', background: '#111', position: 'relative' }}>
-                    <img src={r.thumbnail} alt="Reel" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                    <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '0.5rem', background: 'linear-gradient(transparent, rgba(0,0,0,0.8))', color: '#fff', fontSize: '0.8rem' }}>
-                      {r.caption.substring(0, 20)}...
+            {reelsLoading ? (
+              <div style={{ textAlign: 'center', padding: '3rem' }}>
+                <p style={{ color: 'var(--text-secondary)' }}>Fetching reels from Instagram...</p>
+              </div>
+            ) : reelsError ? (
+              <div style={{ textAlign: 'center', padding: '3rem', border: '1px dashed #ef4444', borderRadius: '8px' }}>
+                <p style={{ color: '#ef4444', marginBottom: '1rem' }}>{reelsError}</p>
+                <Button variant="secondary" onClick={fetchReels}>Retry</Button>
+              </div>
+            ) : apiReels.length === 0 ? (
+              <div style={{ textAlign: 'center', padding: '3rem', border: '1px dashed var(--border-color)', borderRadius: '8px' }}>
+                <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>No reels found for this account.</p>
+                <Button variant="secondary" onClick={fetchReels}>Refresh</Button>
+              </div>
+            ) : (
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '1rem' }}>
+                {apiReels.map(r => (
+                  <div 
+                    key={r.id} 
+                    onClick={() => { setReel(r); setShowReelModal(false); }}
+                    style={{ cursor: 'pointer', borderRadius: '8px', overflow: 'hidden', border: reel?.id === r.id ? '2px solid #3b82f6' : '2px solid transparent', transition: 'all 0.2s' }}
+                  >
+                    <div style={{ width: '100%', aspectRatio: '9/16', background: '#111', position: 'relative' }}>
+                      <img src={r.thumbnail_url || r.media_url || r.thumbnail} alt="Reel" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '0.5rem', background: 'linear-gradient(transparent, rgba(0,0,0,0.8))', color: '#fff', fontSize: '0.8rem' }}>
+                        {r.caption ? r.caption.substring(0, 20) + '...' : 'Reel ' + r.id}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       )}
