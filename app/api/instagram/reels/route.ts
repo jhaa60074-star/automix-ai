@@ -15,18 +15,18 @@ export async function GET(request: Request) {
     // Get the connected Instagram account
     const { data: accounts, error: accountError } = await supabase
       .from('instagram_connected_accounts')
-      .select('instagram_user_id, access_token')
+      .select('instagram_user_id, access_token, facebook_page_id')
       .eq('user_id', user.id)
       .limit(1)
 
     if (accountError || !accounts || accounts.length === 0) {
-      return NextResponse.json({ error: 'No Instagram account connected' }, { status: 401 })
+      return NextResponse.json({ status: 'NOT_CONNECTED', error: 'No Instagram account connected' }, { status: 400 })
     }
 
-    const { instagram_user_id, access_token } = accounts[0]
+    const { instagram_user_id, access_token, facebook_page_id } = accounts[0]
 
-    if (!instagram_user_id || !access_token) {
-      return NextResponse.json({ error: 'Incomplete account details' }, { status: 400 })
+    if (!instagram_user_id || !access_token || !facebook_page_id) {
+      return NextResponse.json({ status: 'NOT_CONNECTED', error: 'Incomplete account details' }, { status: 400 })
     }
 
     let metaApiUrl = `https://graph.facebook.com/v20.0/${instagram_user_id}/media?fields=id,caption,media_type,media_url,thumbnail_url,timestamp,like_count,comments_count&access_token=${access_token}`
@@ -80,6 +80,7 @@ export async function GET(request: Request) {
         const finalErrorData = await metaResponse.json().catch(() => ({}))
         return NextResponse.json(
           { 
+            status: 'TOKEN_EXPIRED',
             error: 'meta_api_error', 
             message: 'Failed to fetch reels from Instagram. The access token may have expired and refresh failed. Please reconnect.',
             details: finalErrorData

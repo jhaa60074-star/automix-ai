@@ -62,11 +62,9 @@ export default async function InstagramAutomationsPage() {
           <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
             To start building automations, connect your professional Instagram account linked to a Facebook Page.
           </p>
-          <form action="/api/instagram/connect" method="POST">
-            <Button variant="primary" style={{ width: '100%', maxWidth: '300px' }}>
-              Connect with Facebook
-            </Button>
-          </form>
+          <a href="/api/instagram/connect" className="btn btn-primary" style={{ display: 'inline-block', width: '100%', maxWidth: '300px' }}>
+            Connect with Facebook
+          </a>
         </div>
       ) : (
         <>

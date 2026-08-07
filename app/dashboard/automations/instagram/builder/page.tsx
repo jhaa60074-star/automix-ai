@@ -13,7 +13,7 @@ function InstagramBuilderContent() {
 
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
-  const [isConnected, setIsConnected] = useState<boolean | null>(null)
+  const [connectionState, setConnectionState] = useState<'LOADING' | 'NOT_CONNECTED' | 'CONNECTED' | 'TOKEN_EXPIRED'>('LOADING')
   
   // Campaign State
   const [name, setName] = useState('New Campaign')
@@ -40,18 +40,30 @@ function InstagramBuilderContent() {
 
   useEffect(() => {
     const init = async () => {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user) {
+        const { data } = await supabase.from('instagram_connected_accounts').select('id').eq('user_id', user.id).limit(1)
+        if (data && data.length > 0) {
+          setConnectionState('CONNECTED')
+        } else {
+          setConnectionState('NOT_CONNECTED')
+          setLoading(false)
+          return
+        }
+      } else {
+        setConnectionState('NOT_CONNECTED')
+        setLoading(false)
+        return
+      }
+
       if (campaignId) {
         await loadCampaign(campaignId)
       } else {
         setLoading(false)
-      }
-      
-      const { data: { user } } = await supabase.auth.getUser()
-      if (user) {
-        const { data } = await supabase.from('instagram_connected_accounts').select('id').eq('user_id', user.id).limit(1)
-        setIsConnected(!!(data && data.length > 0))
-      } else {
-        setIsConnected(false)
+        // Only auto-open if it wasn't triggered by an OAuth callback (to avoid duplicate triggers)
+        if (searchParams.get('autoReel') !== 'true') {
+          setShowReelModal(true)
+        }
       }
     }
     init()
@@ -59,7 +71,6 @@ function InstagramBuilderContent() {
     // Automatically open reel selector if redirected from successful OAuth
     if (searchParams.get('autoReel') === 'true') {
       setShowReelModal(true)
-      // Optionally clean up the URL without triggering a reload
       if (typeof window !== 'undefined') {
         const url = new URL(window.location.href)
         url.searchParams.delete('autoReel')
@@ -81,6 +92,16 @@ function InstagramBuilderContent() {
       const res = await fetch('/api/instagram/reels')
       const data = await res.json()
       if (!res.ok) {
+        if (data.status === 'TOKEN_EXPIRED') {
+          setConnectionState('TOKEN_EXPIRED')
+          setShowReelModal(false)
+          return
+        }
+        if (data.status === 'NOT_CONNECTED') {
+          setConnectionState('NOT_CONNECTED')
+          setShowReelModal(false)
+          return
+        }
         throw new Error(data.message || data.error || 'Failed to fetch reels')
       }
       setApiReels(data.reels || [])
@@ -261,8 +282,42 @@ function InstagramBuilderContent() {
     setKeywords(keywords.filter(k => k !== kw))
   }
 
-  if (loading) {
+  if (connectionState === 'LOADING' || loading) {
     return <div className="container" style={{ padding: '4rem', textAlign: 'center' }}>Loading builder...</div>
+  }
+
+  if (connectionState === 'NOT_CONNECTED') {
+    return (
+      <div className="container" style={{ padding: '4rem 1.5rem', maxWidth: '600px', textAlign: 'center' }}>
+        <div className="card" style={{ padding: '4rem 2rem' }}>
+          <span style={{ fontSize: '3rem', display: 'block', marginBottom: '1rem' }}>📱</span>
+          <h2>Connect Instagram Business</h2>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
+            Connect your Instagram Business account to start using comment automation.
+          </p>
+          <a href="/api/instagram/connect" className="btn btn-primary" style={{ display: 'inline-block' }}>
+            Continue with Facebook
+          </a>
+        </div>
+      </div>
+    )
+  }
+
+  if (connectionState === 'TOKEN_EXPIRED') {
+    return (
+      <div className="container" style={{ padding: '4rem 1.5rem', maxWidth: '600px', textAlign: 'center' }}>
+        <div className="card" style={{ padding: '4rem 2rem' }}>
+          <span style={{ fontSize: '3rem', display: 'block', marginBottom: '1rem' }}>⚠️</span>
+          <h2>Your Instagram session has expired. Please reconnect.</h2>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
+            Your access token has expired and could not be automatically refreshed.
+          </p>
+          <a href="/api/instagram/connect" className="btn btn-primary" style={{ display: 'inline-block' }}>
+            Reconnect Instagram
+          </a>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -308,17 +363,10 @@ function InstagramBuilderContent() {
           </div>
           
           {!reel ? (
-            isConnected === false ? (
-              <div style={{ border: '2px dashed #ef4444', borderRadius: '8px', padding: '3rem', textAlign: 'center' }}>
-                <p style={{ color: '#ef4444', marginBottom: '1rem', fontWeight: '500' }}>Connect Instagram Business</p>
-                <Button href="/api/instagram/connect" variant="primary">Connect Instagram</Button>
-              </div>
-            ) : (
-              <div onClick={() => setShowReelModal(true)} style={{ border: '2px dashed var(--border-color)', borderRadius: '8px', padding: '3rem', textAlign: 'center', cursor: 'pointer', transition: 'all 0.2s' }} className="hover-highlight">
-                <span style={{ fontSize: '2rem', display: 'block', marginBottom: '0.5rem' }}>📱</span>
-                <p style={{ color: 'var(--text-secondary)' }}>Click to select a reel from your account</p>
-              </div>
-            )
+            <div onClick={() => setShowReelModal(true)} style={{ border: '2px dashed var(--border-color)', borderRadius: '8px', padding: '3rem', textAlign: 'center', cursor: 'pointer', transition: 'all 0.2s' }} className="hover-highlight">
+              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '0.5rem' }}>📱</span>
+              <p style={{ color: 'var(--text-secondary)' }}>Click to select a reel from your account</p>
+            </div>
           ) : (
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', background: 'var(--background-secondary)', padding: '1rem', borderRadius: '8px' }}>
               <div style={{ width: '80px', height: '120px', borderRadius: '4px', overflow: 'hidden', background: '#000' }}>
@@ -460,7 +508,7 @@ function InstagramBuilderContent() {
             ) : reelsError ? (
               <div style={{ textAlign: 'center', padding: '3rem', border: '1px dashed #ef4444', borderRadius: '8px' }}>
                 <p style={{ color: '#ef4444', marginBottom: '1rem' }}>{reelsError}</p>
-                <Button href="/api/instagram/connect" variant="primary" style={{ marginRight: '1rem' }}>Reconnect Instagram</Button>
+                <a href="/api/instagram/connect" className="btn btn-primary" style={{ display: 'inline-block', marginRight: '1rem' }}>Reconnect Instagram</a>
                 <Button variant="secondary" onClick={fetchReels}>Retry Fetching</Button>
               </div>
             ) : apiReels.length === 0 ? (
