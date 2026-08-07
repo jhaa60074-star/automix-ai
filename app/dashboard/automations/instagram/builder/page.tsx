@@ -1,11 +1,11 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { createClient } from '@/utils/supabase/client'
 import Button from '@/components/Button'
 
-export default function InstagramBuilderPage() {
+function InstagramBuilderContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const campaignId = searchParams.get('id')
@@ -367,5 +367,13 @@ export default function InstagramBuilderPage() {
         .hover-highlight:hover { background: var(--background-secondary); border-color: var(--text-muted) !important; }
       `}} />
     </div>
+  )
+}
+
+export default function InstagramBuilderPage() {
+  return (
+    <Suspense fallback={<div className="container" style={{ padding: '4rem', textAlign: 'center' }}>Loading builder...</div>}>
+      <InstagramBuilderContent />
+    </Suspense>
   )
 }
