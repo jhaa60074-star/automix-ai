@@ -34,6 +34,18 @@ export default function AdminDashboardPage() {
         <StatCard title="Active Call Agents" value="45" trend="New Feature" trendUp={true} />
         <StatCard title="Call Minutes" value="1,240" trend="New Feature" trendUp={true} />
       </div>
+
+      <div style={{ marginTop: '2rem' }}>
+        <h2 className="section-title" style={{ margin: '0 0 0.5rem 0', fontSize: '1.5rem' }}>Instagram Automation</h2>
+        <p className="section-subtitle" style={{ margin: '0 0 1.5rem 0' }}>Metrics for Instagram builder campaigns</p>
+      </div>
+
+      <div className="grid-4" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
+        <StatCard title="Connected IG Accounts" value="124" trend="15% this week" trendUp={true} />
+        <StatCard title="Active Campaigns" value="342" trend="8% this week" trendUp={true} />
+        <StatCard title="Comments Processed" value="45.2K" trend="12% this month" trendUp={true} />
+        <StatCard title="DMs Sent" value="38.9K" trend="10% this month" trendUp={true} />
+      </div>
     </div>
   );
 }
