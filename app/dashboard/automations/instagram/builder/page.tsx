@@ -13,6 +13,7 @@ function InstagramBuilderContent() {
 
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
+  const [isConnected, setIsConnected] = useState<boolean | null>(null)
   
   // Campaign State
   const [name, setName] = useState('New Campaign')
@@ -38,11 +39,22 @@ function InstagramBuilderContent() {
   const [savingTemplate, setSavingTemplate] = useState(false)
 
   useEffect(() => {
-    if (campaignId) {
-      loadCampaign(campaignId)
-    } else {
-      setLoading(false)
+    const init = async () => {
+      if (campaignId) {
+        await loadCampaign(campaignId)
+      } else {
+        setLoading(false)
+      }
+      
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user) {
+        const { data } = await supabase.from('instagram_connected_accounts').select('id').eq('user_id', user.id).limit(1)
+        setIsConnected(!!(data && data.length > 0))
+      } else {
+        setIsConnected(false)
+      }
     }
+    init()
     
     // Automatically open reel selector if redirected from successful OAuth
     if (searchParams.get('autoReel') === 'true') {
@@ -69,10 +81,6 @@ function InstagramBuilderContent() {
       const res = await fetch('/api/instagram/reels')
       const data = await res.json()
       if (!res.ok) {
-        if (res.status === 401) {
-          window.location.href = '/api/instagram/connect'
-          return
-        }
         throw new Error(data.message || data.error || 'Failed to fetch reels')
       }
       setApiReels(data.reels || [])
@@ -300,10 +308,17 @@ function InstagramBuilderContent() {
           </div>
           
           {!reel ? (
-            <div onClick={() => setShowReelModal(true)} style={{ border: '2px dashed var(--border-color)', borderRadius: '8px', padding: '3rem', textAlign: 'center', cursor: 'pointer', transition: 'all 0.2s' }} className="hover-highlight">
-              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '0.5rem' }}>📱</span>
-              <p style={{ color: 'var(--text-secondary)' }}>Click to select a reel from your account</p>
-            </div>
+            isConnected === false ? (
+              <div style={{ border: '2px dashed #ef4444', borderRadius: '8px', padding: '3rem', textAlign: 'center' }}>
+                <p style={{ color: '#ef4444', marginBottom: '1rem', fontWeight: '500' }}>Connect Instagram Business</p>
+                <Button href="/api/instagram/connect" variant="primary">Connect Instagram</Button>
+              </div>
+            ) : (
+              <div onClick={() => setShowReelModal(true)} style={{ border: '2px dashed var(--border-color)', borderRadius: '8px', padding: '3rem', textAlign: 'center', cursor: 'pointer', transition: 'all 0.2s' }} className="hover-highlight">
+                <span style={{ fontSize: '2rem', display: 'block', marginBottom: '0.5rem' }}>📱</span>
+                <p style={{ color: 'var(--text-secondary)' }}>Click to select a reel from your account</p>
+              </div>
+            )
           ) : (
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', background: 'var(--background-secondary)', padding: '1rem', borderRadius: '8px' }}>
               <div style={{ width: '80px', height: '120px', borderRadius: '4px', overflow: 'hidden', background: '#000' }}>
@@ -450,8 +465,7 @@ function InstagramBuilderContent() {
               </div>
             ) : apiReels.length === 0 ? (
               <div style={{ textAlign: 'center', padding: '3rem', border: '1px dashed var(--border-color)', borderRadius: '8px' }}>
-                <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>No reels found for this account.</p>
-                <Button variant="secondary" onClick={fetchReels}>Refresh</Button>
+                <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>No reels available on this Instagram Business account.</p>
               </div>
             ) : (
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '1rem' }}>
