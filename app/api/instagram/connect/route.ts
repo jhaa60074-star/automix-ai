@@ -12,7 +12,7 @@ async function handleRequest(request: Request) {
   }
 
   const clientId = process.env.NEXT_PUBLIC_META_CLIENT_ID
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, '') || 'https://autrixgpt.com'
   
   if (!clientId) {
     console.error("Missing NEXT_PUBLIC_META_CLIENT_ID")
@@ -20,7 +20,7 @@ async function handleRequest(request: Request) {
   }
 
   const redirectUri = `${appUrl}/api/instagram/callback`
-  const scope = 'instagram_basic,instagram_manage_comments,pages_show_list,pages_read_engagement,business_management'
+  const scope = 'instagram_basic,instagram_manage_comments,pages_show_list,pages_read_engagement,instagram_manage_messages,instagram_manage_insights'
   
   const state = user.id // Pass user ID as state to identify user in callback
   

@@ -10,7 +10,7 @@ async function handleRequest(request: Request) {
   const error = searchParams.get('error')
   const errorReason = searchParams.get('error_reason')
 
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, '') || 'https://autrixgpt.com'
   const redirectUri = `${appUrl}/dashboard/automations/instagram/builder?autoReel=true`
 
   if (error) {
